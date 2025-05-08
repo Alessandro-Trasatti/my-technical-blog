@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs  # GitHub Pages will serve from /docs folder
+
+website:
+  title: "aletras' blog"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/Alessandro-Trasatti
+      - icon: rss
+        href: index.xml
+  site-url: https://aletras.github.io/aletras-blog/
+  description: "A blog documenting my technical studies and projects"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: show
+    code-tools: true
+    highlight-style: github
+
+execute:
+  freeze: auto  # Re-render only when source changes
+
+
+
+
+  
+
+
+
+

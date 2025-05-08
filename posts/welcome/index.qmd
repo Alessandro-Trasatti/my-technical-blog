@@ -1,0 +1,54 @@
+---
+title: "Getting Started with Quarto Blogging"
+author: "Your Name"
+date: "2025-05-08"
+categories: [quarto, blogging, tutorial]
+image: "thumbnail.jpg"
+description: "My first steps in creating a technical blog with Quarto"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+# Welcome to My Technical Blog
+
+This is my first post on my new technical blog. I'll be documenting my learning journey and technical experiments here.
+
+## Why Quarto?
+
+Quarto is an excellent choice for technical blogging because it supports:
+
+1. Code execution and visualization
+2. Mathematics with LaTeX syntax
+3. Cross-references and citations
+4. Multiple output formats
+
+## Let's Try Some Code
+
+Here's a simple Python example:
+
+```{python}
+# A simple example
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate some data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create a plot
+plt.figure(figsize=(8, 4))
+plt.plot(x, y, 'b-', linewidth=2)
+plt.title('Sine Wave')
+plt.xlabel('x')
+plt.ylabel('sin(x)')
+plt.grid(True)
+plt.show()
+```
+
+## And Some Math
+
+The solution to a quadratic equation $ax^2 + bx + c = 0$ is given by:
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$

@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/.quarto/
+/_site/
+/.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+*.tmp
+*.temp
+*.bak

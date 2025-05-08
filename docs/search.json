@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Getting Started with Quarto Blogging",
+    "section": "",
+    "text": "This is my first post on my new technical blog. I’ll be documenting my learning journey and technical experiments here.\n\n\nQuarto is an excellent choice for technical blogging because it supports:\n\nCode execution and visualization\nMathematics with LaTeX syntax\nCross-references and citations\nMultiple output formats\n\n\n\n\nHere’s a simple Python example:\n\n\nShow the code\n# A simple example\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Generate some data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, 'b-', linewidth=2)\nplt.title('Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\nThe solution to a quadratic equation \\(ax^2 + bx + c = 0\\) is given by:\n\\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]"
+  },
+  {
+    "objectID": "posts/welcome/index.html#why-quarto",
+    "href": "posts/welcome/index.html#why-quarto",
+    "title": "Getting Started with Quarto Blogging",
+    "section": "",
+    "text": "Quarto is an excellent choice for technical blogging because it supports:\n\nCode execution and visualization\nMathematics with LaTeX syntax\nCross-references and citations\nMultiple output formats"
+  },
+  {
+    "objectID": "posts/welcome/index.html#lets-try-some-code",
+    "href": "posts/welcome/index.html#lets-try-some-code",
+    "title": "Getting Started with Quarto Blogging",
+    "section": "",
+    "text": "Here’s a simple Python example:\n\n\nShow the code\n# A simple example\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Generate some data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, 'b-', linewidth=2)\nplt.title('Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "posts/welcome/index.html#and-some-math",
+    "href": "posts/welcome/index.html#and-some-math",
+    "title": "Getting Started with Quarto Blogging",
+    "section": "",
+    "text": "The solution to a quadratic equation \\(ax^2 + bx + c = 0\\) is given by:\n\\[x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "aletras’ blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 8, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Quarto Blogging\n\n\n\nquarto\n\nblogging\n\ntutorial\n\n\n\nMy first steps in creating a technical blog with Quarto\n\n\n\n\n\nMay 8, 2025\n\n\nYour Name\n\n\n\n\n\nNo matching items"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "hash": "4f2105b07077e77e99f7fc05811a9cc1",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Getting Started with Quarto Blogging\"\nauthor: \"Your Name\"\ndate: \"2025-05-08\"\ncategories: [quarto, blogging, tutorial]\nimage: \"thumbnail.jpg\"\ndescription: \"My first steps in creating a technical blog with Quarto\"\nformat:\n  html:\n    code-fold: true\n    code-summary: \"Show the code\"\n---\n\n# Welcome to My Technical Blog\n\nThis is my first post on my new technical blog. I'll be documenting my learning journey and technical experiments here.\n\n## Why Quarto?\n\nQuarto is an excellent choice for technical blogging because it supports:\n\n1. Code execution and visualization\n2. Mathematics with LaTeX syntax\n3. Cross-references and citations\n4. Multiple output formats\n\n## Let's Try Some Code\n\nHere's a simple Python example:\n\n::: {#06b08fad .cell execution_count=1}\n``` {.python .cell-code}\n# A simple example\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Generate some data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, 'b-', linewidth=2)\nplt.title('Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){}\n:::\n:::\n\n\n## And Some Math\n\nThe solution to a quadratic equation $ax^2 + bx + c = 0$ is given by:\n\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
