@@ -1,5 +1,5 @@
 ---
-title: "aletras' blog"
+#title: "aletras' blog"
 listing:
   contents: posts
   sort: "date desc"

@@ -1,44 +1,42 @@
 ---
 title: Quarto first example
-author: 
+author:
   - name: Alessandro Trasatti
     email: alessandro.trasatti2@gmail.com
 toc: true
 citation: true
 code-fold: true
 code-tools: true
-# highlight-style: github # to set the style of the code
-#theme: zaphyr # Cool: cyborg, flaty, united, yeti
-#max-width: 2000px
+categories: [quarto, tutorial]
+image: "thumbnail.jpg"
 theme:
   light: flatly
   dark: darkly
 respect-user-color-scheme: true
 code-line-numbers: true
-code-summary: "Show the code"
+code-summary: Show the code
 number-sections: true
 code-annotations: hover
 date: 08 May 2025
 keywords:
   - Some Keyword
   - Some other keyword
-abstract: > 
+abstract: |
   Put some abstract here.
 ---
 
-## What can you do?
-
-### Typical workflow
-
+## Typical workflow
 Each time you want to create a new blog post:
 
 1. Create a new directory inside the posts folder with your post name
-2. Add an index.qmd file inside this directory
+2. Add an `index.qmd` file inside this directory
 3. Add any related resources (images, data) in the same directory
 4. Write your content using Markdown, code chunks, and LaTeX
-5. Render and preview locally with quarto preview
-6. Build the site with quarto render
-7. Commit and push changes to GitHub
+5. Render and preview locally with `quarto preview`
+6. Build the site with `quarto render`
+7. Commit and push changes to `GitHub`
+
+## What can you do?
 
 ### Text
 
@@ -47,12 +45,10 @@ A comprehensive guide can be found [here](https://quarto.org/docs/authoring/mark
 Here is some simple text. You can
 
 -   *use very differnt styles*: italics, bold, verbatim, super/subscripts, strikethrough, etc.
--   *Make headings*: using #. Using more \#'s makes the headings smaller.
+-   *Make headings*: using #. Using more #'s makes the headings smaller.
 -   Create differnt types of *lists and task checkers*; **NB:** You need a blank line before the list to be rendered as such;
 -   *Use footnotes*: this is possible like this;[^1]
 -   *Use tables*;
-
-[^1]: Here is a footnote.
 
 ### Math
 
@@ -63,73 +59,54 @@ You can do many things with mathematics.
 
 yada yada
 
-\begin{equation}
-\boxed{
-\frac{f(x)}{\mathbfcal{H}(y)} = \int_a^b h(z, x, y)dz
-}
-\end{equation}
-
 You can also define custom *latex* macros by using *hidden blocks* as follows:
 
-::: hidden
 $$
  \def\RR{{\bf R}}
  \def\bold#1{{\bf #1}}
  \def\fr#1#2{{\frac{#1}{#2}}}
 $$
-:::
 
 $\RR$ $\bold x$ $\fr a b$ $\mathbf{x}$
 
 #### Theorems and proofs
+
 Theorems are commonly used in articles and books in mathematics. To include a reference-able theorem, create a div with a `#thm-` label (or one of other theorem-type labels described [here](https://quarto.org/docs/authoring/cross-references.html)). You also need to specify a theorem name either via the first heading in the block. You can include any content you like within the div. For example:
 
-::: {#thm-line}
-
-## Line
-
-The equation of any straight line, called a linear equation, can be written as:
+<span class="theorem-title">**Theorem 1 (Line)**</span> The equation of any straight line, called a linear equation, can be written as:
 
 $$
 y = mx + b
 $$
-:::
 
-See @thm-line.
+See <a href="#thm-line" class="quarto-xref">Theorem 1</a>.
 
-::: {#lem-}
+<span class="theorem-title">**Lemma 1 (Some lemma)**</span> Statement
 
-## Some lemma
-
-Statement
-:::
-
-:::: {#.proof}
 the proof
-::::
 
 #### Equations
+
 Provide an `#eq-` label immediately after an equation to make it referenceable. For example:
 
-Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
+Black-Scholes (<a href="#eq-black-scholes" class="quarto-xref">Equation 1</a>) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
 
-$$
+<span id="eq-black-scholes">$$
 \frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
 \frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
   + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
   \mathrm r \mathrm C 
-$$ {#eq-black-scholes}
+ \qquad(1)$$</span>
 
-::: {#rem-}
-Numbers on equations appear if you include a label (same for theorems, lemas, etc..).
-:::
+<span class="proof-title">*Remark 1*. </span>Numbers on equations appear if you include a label (same for theorems, lemas, etc..).
 
 #### Sections
+
 To reference a section, add a `#sec-` identifier to any heading.
 
 Note that when using section cross-references, you will also need to enable the number-sections option (so that section numbering is visible to readers). For example:
 
-```default
+``` default
 ---
 title: "My Document"
 number-sections: true
@@ -142,9 +119,7 @@ Again, use the *code* shortcut to trigger different options. Hereby we see some:
 
 **Simple code block**
 
-```         
-Code example
-```
+    Code example
 
 **Inline code**
 
@@ -178,46 +153,58 @@ yada yada
 
 **Executable code block**: Not that many are currently supported but Python is.
 
-```{python}
+<details class="code-fold">
+<summary>Show the code</summary>
+
+``` python
 x = 3
 for i in range(x):
     print(i, end=' ') 
 ```
+
+</details>
+
+    0 1 2 
 
 You can even run some external program. In this example, let us run `code.py`:
 
-``` {.python filename="example.py"}
+**example.py**
+
+``` python
 x = 3
 for i in range(x):
     print(i, end=' ') 
 ```
 
-We can also go to a new page as follows: {{< pagebreak >}}
+We can also go to a new page as follows: 
 
 #### Code Annotation
+
 Code blocks and executable code cells in Quarto can include line-based annotations. Line-based annotations provide a way to attach explanation to lines of code much like footnotes.
 
 Annotations for a code cell consist of two related elements:
 
-1. Each annotated line should be terminated with a comment (using the code cell’s language comment character) followed by a space and then an annotation number enclosed in angle brackets (e.g. # <2>). You may repeat an annotation number if the annotation spans multiple lines.
-2. An ordered list that appears immediately after the code cell which includes the contents of each annotation. Each numbered item in the ordered list will correspond to the line(s) of code with the same annotation number.
+1.  Each annotated line should be terminated with a comment (using the code cell's language comment character) followed by a space and then an annotation number enclosed in angle brackets (e.g. # \<2\>). You may repeat an annotation number if the annotation spans multiple lines.
+2.  An ordered list that appears immediately after the code cell which includes the contents of each annotation. Each numbered item in the ordered list will correspond to the line(s) of code with the same annotation number.
 
-```python
+``` python
 def compute_triangle_area(base, height):
-    assert(isinstance(base, [float, int])), f"base should be of type float, but got a {type(base)} type"         # <1>
-    assert(isinstance(height, [float, int])), f" height should be of type float, but got a {type(height)} type" # <1>
-    return base * height # <2>
+    assert(isinstance(base, [float, int])), f"base should be of type float, but got a {type(base)} type"
+    assert(isinstance(height, [float, int])), f" height should be of type float, but got a {type(height)} type"
+    return base * height
 ```
-1. Checks if both `base` and `height` are of type `int` or `float`, throws an error otherwise.
-2. Returns the triangle area: $A = b \times h$.
+
+Lines 2-3
+:   Checks if both `base` and `height` are of type `int` or `float`, throws an error otherwise.
+
+Line 4
+:   Returns the triangle area: $A = b \times h$.
 
 ### Raw content
 
-Raw content can be included directly without Quarto parsing it using Pandoc’s raw attribute. Here is an example of an HTML block
+Raw content can be included directly without Quarto parsing it using Pandoc's raw attribute. Here is an example of an HTML block
 
-```{=html}
 <iframe src="https://quarto.org/" width="500" height="400"></iframe>
-```
 
 You can also add *inline* raw content like this: Here's some raw inline HTML: <a>html</a>
 
@@ -235,17 +222,20 @@ Quarto has native support for embedding [Mermaid](https://mermaid.js.org/#/) and
 
 For example, here we embed a flowchart created using Mermaid:
 
-```{mermaid}
-flowchart LR
-  A[Hard edge] --> B(Round edge)
-  B --> C{Decision}
-  C --> D[Result one]
-  C --> E[Result two]
-```
+<figure class=''>
+
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Hard edge] --&gt; B(Round edge)
+  B --&gt; C{Decision}
+  C --&gt; D[Result one]
+  C --&gt; E[Result two]
+</pre>
+
+</figure>
 
 ### Videos
 
-You can include videos in documents using the as follows {{< video https://www.youtube.com/embed/wo9vZccmqwc >}} Videos can refer to video files (e.g. MPEG) or can be links to videos published on YouTube, Vimeo, or Brightcove.
+You can include videos in documents using the as follows <https://www.youtube.com/embed/wo9vZccmqwc> Videos can refer to video files (e.g. MPEG) or can be links to videos published on YouTube, Vimeo, or Brightcove.
 
 ### Divs and spans
 
@@ -253,35 +243,29 @@ You can add classes, attributes, and other identifiers to regions of content usi
 
 ##### Divs
 
-For example, here we add the “border” class to a region of content using a div (`:::`):
+For example, here we add the "border" class to a region of content using a div (`:::`):
 
 Divs start with a fence containing at least three consecutive colons plus some attributes. The attributes may optionally be followed by another string of consecutive colons. The Div ends with another line containing a string of at least three consecutive colons. The Div should be separated by blank lines from preceding and following blocks. Divs may also be nested. For example
 
-:::: {#special .sidebar}
-::: warning
 Here is a warning.
-:::
 
 More content.
-::::
 
-::: border
 This content can be styled with a border
-:::
 
 ##### Spans
 
 A bracketed sequence of inlines, as one would use to begin a link, will be treated as a Span with attributes if it is followed immediately by attributes:
 
-[This is *some text*]{.class key="val"}
+<span class="class" key="val">This is *some text*</span>
 
 To create text in small caps, that is underlined, or that is highlighted, use a span with one of the classes .smallcaps, .underline or .mark respectively.
 
-[This text is smallcaps]{.smallcaps}
+<span class="smallcaps">This text is smallcaps</span>
 
-[This text is underlined]{.underline}
+<u>This text is underlined</u>
 
-[This text is highlighted]{.mark}
+<span class="mark">This text is highlighted</span>
 
 ### Callout Blocks
 
@@ -295,61 +279,51 @@ There are five different types of callouts available.
 -   `tip`
 -   `caution`
 
-::: callout-note
-Note that there are five types of callouts, including: `note`, `warning`, `important`, `tip`, and `caution`.
-:::
+> **Note**
+>
+> Note that there are five types of callouts, including: `note`, `warning`, `important`, `tip`, and `caution`.
 
-::: callout-tip
-## Tip with Title
+> **Tip with Title**
+>
+> This is an example of a callout with a title.
 
-This is an example of a callout with a title.
-:::
+> **Tip with Title**
+>
+> This is a callout with a title.
 
-::: {.callout-tip title="Tip with Title"}
-This is a callout with a title.
-:::
-
-::: {.callout-caution collapse="true"}
-## Expand To Learn About Collapse\*\*
-
-This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
-:::
+> **Expand To Learn About Collapse\*\***
+>
+> This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
 
 You can customize the style of these `callout blocks`.
 
-::: {.callout-note appearance="simple"}
-## Pay Attention
-
-Using callouts is an effective way to highlight content that your reader give special consideration or attention.
-:::
+> **Pay Attention**
+>
+> Using callouts is an effective way to highlight content that your reader give special consideration or attention.
 
 You can also remove the icon if you want
 
-::: {.callout-note icon="false"}
-## Pay Attention
-
-Using callouts is an effective way to highlight content that your reader give special consideration or attention.
-:::
+> **Pay Attention**
+>
+> Using callouts is an effective way to highlight content that your reader give special consideration or attention.
 
 Finally, you can cross reference blocks using the customary `@`
 
-::: {#tip-example .callout-tip}
-## Cross-Referencing a Tip
+> **Tip 1: Cross-Referencing a Tip**
+>
+> Add an ID starting with `#tip-` to reference a tip.
 
-Add an ID starting with `#tip-` to reference a tip.
-:::
+See <a href="#tip-example" class="quarto-xref">Tip 1</a>...
 
-See @tip-example...
+| Callout Type | Prefix  |
+|--------------|---------|
+| `note`       | `#nte-` |
+| `tip`        | `#tip-` |
+| `warning`    | `#wrn-` |
+| `important`  | `#imp-` |
+| `caution`    | `#cau-` |
 
-| Callout Type | Prefix |
-|--------------|--------|
-|    `note`    | `#nte-`|
-|    `tip`     | `#tip-`|
-|    `warning` | `#wrn-`|
-|  `important` | `#imp-`|
-|  `caution`   | `#cau-`|
-
-: Prefixes for callout cross-references
+Prefixes for callout cross-references
 
 ### Shortcuts
 
@@ -366,19 +340,20 @@ Here is a list of words that you can type on the keyboard to trigger different f
 -   **strikethrough**: to trigger something ~~like this~~;
 
 #### Custom-shortcuts
-::: {.callout-important collapse="true"}
-## Custom shortcuts to complete
 
-To Do!
-:::
+> **Custom shortcuts to complete**
+>
+> To Do!
 
 ### Customization
 
 #### `brand.yml`
-Quarto supports `brand.yml`—a single `YAML` file that can be used to customize the appearance of your documents across multiple formats. This is particularly useful for organizations that need a unified look across various formats.
+
+Quarto supports `brand.yml`---a single `YAML` file that can be used to customize the appearance of your documents across multiple formats. This is particularly useful for organizations that need a unified look across various formats.
 
 **An example**
-```default
+
+``` default
 color:
   palette:
     dark-grey: "#222222"
@@ -401,30 +376,32 @@ typography:
 The elements of `brand.yml` are specified in the documentation for the [brand.yml project](https://posit-dev.github.io/brand-yml/). In this section, learn how these elements are used in Quarto.
 
 #### Colors
-Use `color` to define your brand’s color palette and map your palette to the roles colors play, a.k.a semantic colors. A simple example might define the value background to a light blue:
-```default
+
+Use `color` to define your brand's color palette and map your palette to the roles colors play, a.k.a semantic colors. A simple example might define the value background to a light blue:
+
+``` default
 color:
   background: "#ddeaf1"
 ```
 
 #### Margin cotent
+
 You can place content within the right margin of Quarto document. For example, here we use the `.column-margin` class to place an image in the margin:
 
 $$
 e^{i\pi} = 1
 $$
 
-::: {.column-margin}
 We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
 $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
-:::
 
 Clearly, this can be done with images as well.
 
 #### Margin figures
+
 Figures that you create using code cells can be placed in the margin by using the column: margin code cell option. If the code produces more than one figure, each of the figures will be placed in the margin.
 
-```default
+``` default
 #| label: fig-mtcars
 #| fig-cap: "MPG vs horsepower, colored by transmission."
 #| column: margin
@@ -441,22 +418,28 @@ ggplot(mtcars2, aes(hp, mpg, color = am)) +
 ```
 
 #### Margin refereces
+
 Footnotes and the bibliography typically appear at the end of the document, but you can choose to have them placed in the margin by setting the following option1 in the document front matter:
-```default
+
+``` default
 ---
 reference-location: margin
 citation-location: margin
 ---
 ```
+
 With these options set, footnotes and citations will (respectively) be automatically be placed in the margin of the document rather than the bottom of the page. As an example, when I cite Xie, Allaire, and Grolemund ([2018](https://bookdown.org/yihui/rmarkdown/)), the citation bibliography entry itself will now appear in the margin.
 
 #### Asides
+
 Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).
-[This is a span that has the class `aside` which places it in the margin without a footnote number.]{.aside}
+<span class="column-margin margin-aside">This is a span that has the class `aside` which places it in the margin without a footnote number.</span>
 
 #### Margin captions
+
 For figures and tables, you may leave the content in the body of the document while placing the caption in the margin of the document. Using cap-location: margin in a code cell or document front matter to control this. For example:
-```default
+
+``` default
 #| label: fig-cap-margin
 #| fig-cap: "MPG vs horsepower, colored by transmission."
 #| cap-location: margin
@@ -473,18 +456,16 @@ ggplot(mtcars2, aes(hp, mpg, color = am)) +
 ```
 
 #### Using classes
+
 In addition to global and code cell specific options, you may use divs with layout classes (prefixed with `.column-`) to arrange content into columns:
 
-::: {.column-margin}
 This content will appear in the margin!
-:::
 
 ### Tabsets
 
-::: {.panel-tabset}
 ## R
 
-``` {.r}
+``` r
 fizz_buzz <- function(fbnums = 1:50) {
   output <- dplyr::case_when(
     fbnums %% 15 == 0 ~ "FizzBuzz",
@@ -498,7 +479,7 @@ fizz_buzz <- function(fbnums = 1:50) {
 
 ## Python
 
-``` {.python}
+``` python
 def fizz_buzz(num):
   if num % 15 == 0:
     print("FizzBuzz")
@@ -510,14 +491,14 @@ def fizz_buzz(num):
     print(num)
 ```
 
-:::
-
 ### Citations
+
 Quarto will use Pandoc to automatically generate citations and a bibliography in a number of styles. To use this capability, you will need:
 
-1. A quarto document formatted with citations (see [Citation Markdown](https://quarto.org/docs/authoring/citations.html#sec-citations)).
-2. A bibliographic data source, for example a BibLaTeX (`.bib`) or BibTeX (`.bibtex`) file.
-3. Optionally, a `CSL` file which specifies the formatting to use when generating the citations and bibliography (when not using `natbib` or `biblatex` to generate the bibliography).
+1.  A quarto document formatted with citations (see [Citation Markdown](https://quarto.org/docs/authoring/citations.html#sec-citations)).
+2.  A bibliographic data source, for example a BibLaTeX (`.bib`) or BibTeX (`.bibtex`) file.
+3.  Optionally, a `CSL` file which specifies the formatting to use when generating the citations and bibliography (when not using `natbib` or `biblatex` to generate the bibliography).
 
 In the front, just add `bibliography: references.bib`.
 
+[^1]: Here is a footnote.
