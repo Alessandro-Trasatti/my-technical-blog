@@ -19,6 +19,8 @@ code-summary: "Show the code"
 number-sections: true
 code-annotations: hover
 date: 08 May 2025
+categories: [quarto, tutorial]
+image: thumbnail.png
 keywords:
   - Some Keyword
   - Some other keyword
