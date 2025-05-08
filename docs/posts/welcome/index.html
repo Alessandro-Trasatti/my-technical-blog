@@ -144,6 +144,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -423,7 +424,7 @@ window.Quarto = {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>Put some abstract here.</p>
+    <p>I experiment and and learn (some) stuff that quarto can do, from math to code, from images to tables, etc…</p>
   </div>
 </div>
 
@@ -444,12 +445,12 @@ window.Quarto = {
 <p>Each time you want to create a new blog post:</p>
 <ol type="1">
 <li>Create a new directory inside the posts folder with your post name</li>
-<li>Add an index.qmd file inside this directory</li>
+<li>Add an <code>index.qmd</code> file inside this directory</li>
 <li>Add any related resources (images, data) in the same directory</li>
 <li>Write your content using Markdown, code chunks, and LaTeX</li>
-<li>Render and preview locally with quarto preview</li>
-<li>Build the site with quarto render</li>
-<li>Commit and push changes to GitHub</li>
+<li>Render and preview locally with <code>quarto preview</code></li>
+<li>Build the site with <code>quarto render</code></li>
+<li>Commit and push changes to <code>GitHub</code></li>
 </ol>
 </section>
 <section id="text" class="level3" data-number="1.2">
@@ -548,7 +549,7 @@ y = mx + b
 <p><strong>Default language</strong>: Pandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1"></a>yada yada</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Executable code block</strong>: Not that many are currently supported but Python is.</p>
-<div id="b5515b34" class="cell" data-execution_count="1">
+<div id="33f54ed1" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>x <span class="op">=</span> <span class="dv">3</span></span>
@@ -989,7 +990,8 @@ e^{i\pi} = 1
   date = {2025-05-08},
   url = {https://aletras.github.io/aletras-blog/posts/welcome/},
   langid = {en},
-  abstract = {Put some abstract here.}
+  abstract = {I experiment and and learn (some) stuff that quarto can
+    do, from math to code, from images to tables, etc...}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-trasatti2025" class="csl-entry quarto-appendix-citeas" role="listitem">
 Trasatti, Alessandro. 2025. <span>“Quarto First Example.”</span> May 8,
@@ -1512,515 +1514,516 @@ Trasatti, Alessandro. 2025. <span>“Quarto First Example.”</span> May 8,
 <span id="cb16-13"><a href="#cb16-13"></a><span class="an">theme:</span></span>
 <span id="cb16-14"><a href="#cb16-14"></a><span class="co">  light: flatly</span></span>
 <span id="cb16-15"><a href="#cb16-15"></a><span class="co">  dark: darkly</span></span>
-<span id="cb16-16"><a href="#cb16-16"></a><span class="an">respect-user-color-scheme:</span><span class="co"> true</span></span>
-<span id="cb16-17"><a href="#cb16-17"></a><span class="an">code-line-numbers:</span><span class="co"> true</span></span>
-<span id="cb16-18"><a href="#cb16-18"></a><span class="an">code-summary:</span><span class="co"> "Show the code"</span></span>
-<span id="cb16-19"><a href="#cb16-19"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
-<span id="cb16-20"><a href="#cb16-20"></a><span class="an">code-annotations:</span><span class="co"> hover</span></span>
-<span id="cb16-21"><a href="#cb16-21"></a><span class="an">date:</span><span class="co"> 08 May 2025</span></span>
-<span id="cb16-22"><a href="#cb16-22"></a><span class="an">categories:</span><span class="co"> [quarto, tutorial]</span></span>
-<span id="cb16-23"><a href="#cb16-23"></a><span class="an">image:</span><span class="co"> thumbnail.png</span></span>
-<span id="cb16-24"><a href="#cb16-24"></a><span class="an">keywords:</span></span>
-<span id="cb16-25"><a href="#cb16-25"></a><span class="co">  - Some Keyword</span></span>
-<span id="cb16-26"><a href="#cb16-26"></a><span class="co">  - Some other keyword</span></span>
-<span id="cb16-27"><a href="#cb16-27"></a><span class="an">abstract:</span><span class="co"> &gt; </span></span>
-<span id="cb16-28"><a href="#cb16-28"></a><span class="co">  Put some abstract here.</span></span>
-<span id="cb16-29"><a href="#cb16-29"></a><span class="co">---</span></span>
-<span id="cb16-30"><a href="#cb16-30"></a></span>
-<span id="cb16-31"><a href="#cb16-31"></a><span class="fu">## What can you do?</span></span>
-<span id="cb16-32"><a href="#cb16-32"></a></span>
-<span id="cb16-33"><a href="#cb16-33"></a><span class="fu">### Typical workflow</span></span>
-<span id="cb16-34"><a href="#cb16-34"></a></span>
-<span id="cb16-35"><a href="#cb16-35"></a>Each time you want to create a new blog post:</span>
-<span id="cb16-36"><a href="#cb16-36"></a></span>
-<span id="cb16-37"><a href="#cb16-37"></a><span class="ss">1. </span>Create a new directory inside the posts folder with your post name</span>
-<span id="cb16-38"><a href="#cb16-38"></a><span class="ss">2. </span>Add an index.qmd file inside this directory</span>
-<span id="cb16-39"><a href="#cb16-39"></a><span class="ss">3. </span>Add any related resources (images, data) in the same directory</span>
-<span id="cb16-40"><a href="#cb16-40"></a><span class="ss">4. </span>Write your content using Markdown, code chunks, and LaTeX</span>
-<span id="cb16-41"><a href="#cb16-41"></a><span class="ss">5. </span>Render and preview locally with quarto preview</span>
-<span id="cb16-42"><a href="#cb16-42"></a><span class="ss">6. </span>Build the site with quarto render</span>
-<span id="cb16-43"><a href="#cb16-43"></a><span class="ss">7. </span>Commit and push changes to GitHub</span>
-<span id="cb16-44"><a href="#cb16-44"></a></span>
-<span id="cb16-45"><a href="#cb16-45"></a><span class="fu">### Text</span></span>
-<span id="cb16-46"><a href="#cb16-46"></a></span>
-<span id="cb16-47"><a href="#cb16-47"></a>A comprehensive guide can be found <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span>.</span>
-<span id="cb16-48"><a href="#cb16-48"></a></span>
-<span id="cb16-49"><a href="#cb16-49"></a>Here is some simple text. You can</span>
-<span id="cb16-50"><a href="#cb16-50"></a></span>
-<span id="cb16-51"><a href="#cb16-51"></a><span class="ss">-   </span>*use very differnt styles*: italics, bold, verbatim, super/subscripts, strikethrough, etc.</span>
-<span id="cb16-52"><a href="#cb16-52"></a><span class="ss">-   </span>*Make headings*: using #. Using more <span class="sc">\#</span>'s makes the headings smaller.</span>
-<span id="cb16-53"><a href="#cb16-53"></a><span class="ss">-   </span>Create differnt types of *lists and task checkers*; **NB:** You need a blank line before the list to be rendered as such;</span>
-<span id="cb16-54"><a href="#cb16-54"></a><span class="ss">-   </span>*Use footnotes*: this is possible like this;<span class="ot">[^1]</span></span>
-<span id="cb16-55"><a href="#cb16-55"></a><span class="ss">-   </span>*Use tables*;</span>
-<span id="cb16-56"><a href="#cb16-56"></a></span>
-<span id="cb16-57"><a href="#cb16-57"></a><span class="ot">[^1]: </span>Here is a footnote.</span>
-<span id="cb16-58"><a href="#cb16-58"></a></span>
-<span id="cb16-59"><a href="#cb16-59"></a><span class="fu">### Math</span></span>
-<span id="cb16-60"><a href="#cb16-60"></a></span>
-<span id="cb16-61"><a href="#cb16-61"></a>You can do many things with mathematics.</span>
-<span id="cb16-62"><a href="#cb16-62"></a></span>
-<span id="cb16-63"><a href="#cb16-63"></a><span class="ss">-   </span>*Inline math*: $x = y$.</span>
-<span id="cb16-64"><a href="#cb16-64"></a><span class="ss">-   </span>*Math block*: $$ e^{i \pi} = 1$$</span>
-<span id="cb16-65"><a href="#cb16-65"></a></span>
-<span id="cb16-66"><a href="#cb16-66"></a>yada yada</span>
-<span id="cb16-67"><a href="#cb16-67"></a></span>
-<span id="cb16-68"><a href="#cb16-68"></a>\begin{equation}</span>
-<span id="cb16-69"><a href="#cb16-69"></a>\boxed{</span>
-<span id="cb16-70"><a href="#cb16-70"></a>\frac{f(x)}{\mathbfcal{H}(y)} = \int_a^b h(z, x, y)dz</span>
-<span id="cb16-71"><a href="#cb16-71"></a>}</span>
-<span id="cb16-72"><a href="#cb16-72"></a>\end{equation}</span>
-<span id="cb16-73"><a href="#cb16-73"></a></span>
-<span id="cb16-74"><a href="#cb16-74"></a>You can also define custom *latex* macros by using *hidden blocks* as follows:</span>
-<span id="cb16-75"><a href="#cb16-75"></a></span>
-<span id="cb16-76"><a href="#cb16-76"></a>::: hidden</span>
-<span id="cb16-77"><a href="#cb16-77"></a>$$</span>
-<span id="cb16-78"><a href="#cb16-78"></a> \def\RR{{\bf R}}</span>
-<span id="cb16-79"><a href="#cb16-79"></a> \def\bold#1{{\bf #1}}</span>
-<span id="cb16-80"><a href="#cb16-80"></a> \def\fr#1#2{{\frac{#1}{#2}}}</span>
-<span id="cb16-81"><a href="#cb16-81"></a>$$</span>
-<span id="cb16-82"><a href="#cb16-82"></a>:::</span>
-<span id="cb16-83"><a href="#cb16-83"></a></span>
-<span id="cb16-84"><a href="#cb16-84"></a>$\RR$ $\bold x$ $\fr a b$ $\mathbf{x}$</span>
-<span id="cb16-85"><a href="#cb16-85"></a></span>
-<span id="cb16-86"><a href="#cb16-86"></a><span class="fu">#### Theorems and proofs</span></span>
-<span id="cb16-87"><a href="#cb16-87"></a>Theorems are commonly used in articles and books in mathematics. To include a reference-able theorem, create a div with a <span class="in">`#thm-`</span> label (or one of other theorem-type labels described <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/cross-references.html)</span>). You also need to specify a theorem name either via the first heading in the block. You can include any content you like within the div. For example:</span>
-<span id="cb16-88"><a href="#cb16-88"></a></span>
-<span id="cb16-89"><a href="#cb16-89"></a>::: {#thm-line}</span>
-<span id="cb16-90"><a href="#cb16-90"></a></span>
-<span id="cb16-91"><a href="#cb16-91"></a><span class="fu">## Line</span></span>
-<span id="cb16-92"><a href="#cb16-92"></a></span>
-<span id="cb16-93"><a href="#cb16-93"></a>The equation of any straight line, called a linear equation, can be written as:</span>
-<span id="cb16-94"><a href="#cb16-94"></a></span>
-<span id="cb16-95"><a href="#cb16-95"></a>$$</span>
-<span id="cb16-96"><a href="#cb16-96"></a>y = mx + b</span>
-<span id="cb16-97"><a href="#cb16-97"></a>$$</span>
-<span id="cb16-98"><a href="#cb16-98"></a>:::</span>
-<span id="cb16-99"><a href="#cb16-99"></a></span>
-<span id="cb16-100"><a href="#cb16-100"></a>See @thm-line.</span>
-<span id="cb16-101"><a href="#cb16-101"></a></span>
-<span id="cb16-102"><a href="#cb16-102"></a>::: {#lem-}</span>
-<span id="cb16-103"><a href="#cb16-103"></a></span>
-<span id="cb16-104"><a href="#cb16-104"></a><span class="fu">## Some lemma</span></span>
-<span id="cb16-105"><a href="#cb16-105"></a></span>
-<span id="cb16-106"><a href="#cb16-106"></a>Statement</span>
-<span id="cb16-107"><a href="#cb16-107"></a>:::</span>
-<span id="cb16-108"><a href="#cb16-108"></a></span>
-<span id="cb16-109"><a href="#cb16-109"></a>:::: {#.proof}</span>
-<span id="cb16-110"><a href="#cb16-110"></a>the proof</span>
-<span id="cb16-111"><a href="#cb16-111"></a>::::</span>
-<span id="cb16-112"><a href="#cb16-112"></a></span>
-<span id="cb16-113"><a href="#cb16-113"></a><span class="fu">#### Equations</span></span>
-<span id="cb16-114"><a href="#cb16-114"></a>Provide an <span class="in">`#eq-`</span> label immediately after an equation to make it referenceable. For example:</span>
-<span id="cb16-115"><a href="#cb16-115"></a></span>
-<span id="cb16-116"><a href="#cb16-116"></a>Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:</span>
-<span id="cb16-117"><a href="#cb16-117"></a></span>
-<span id="cb16-118"><a href="#cb16-118"></a>$$</span>
-<span id="cb16-119"><a href="#cb16-119"></a>\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}</span>
-<span id="cb16-120"><a href="#cb16-120"></a>\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}</span>
-<span id="cb16-121"><a href="#cb16-121"></a><span class="ss">  + </span>\mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =</span>
-<span id="cb16-122"><a href="#cb16-122"></a>  \mathrm r \mathrm C </span>
-<span id="cb16-123"><a href="#cb16-123"></a>$$ {#eq-black-scholes}</span>
-<span id="cb16-124"><a href="#cb16-124"></a></span>
-<span id="cb16-125"><a href="#cb16-125"></a>::: {#rem-}</span>
-<span id="cb16-126"><a href="#cb16-126"></a>Numbers on equations appear if you include a label (same for theorems, lemas, etc..).</span>
-<span id="cb16-127"><a href="#cb16-127"></a>:::</span>
-<span id="cb16-128"><a href="#cb16-128"></a></span>
-<span id="cb16-129"><a href="#cb16-129"></a><span class="fu">#### Sections</span></span>
-<span id="cb16-130"><a href="#cb16-130"></a>To reference a section, add a <span class="in">`#sec-`</span> identifier to any heading.</span>
-<span id="cb16-131"><a href="#cb16-131"></a></span>
-<span id="cb16-132"><a href="#cb16-132"></a>Note that when using section cross-references, you will also need to enable the number-sections option (so that section numbering is visible to readers). For example:</span>
-<span id="cb16-133"><a href="#cb16-133"></a></span>
-<span id="cb16-134"><a href="#cb16-134"></a><span class="in">```default</span></span>
-<span id="cb16-135"><a href="#cb16-135"></a><span class="in">---</span></span>
-<span id="cb16-136"><a href="#cb16-136"></a><span class="in">title: "My Document"</span></span>
-<span id="cb16-137"><a href="#cb16-137"></a><span class="in">number-sections: true</span></span>
-<span id="cb16-138"><a href="#cb16-138"></a><span class="in">---</span></span>
-<span id="cb16-139"><a href="#cb16-139"></a><span class="in">```</span></span>
-<span id="cb16-140"><a href="#cb16-140"></a></span>
-<span id="cb16-141"><a href="#cb16-141"></a><span class="fu">### Code</span></span>
-<span id="cb16-142"><a href="#cb16-142"></a></span>
-<span id="cb16-143"><a href="#cb16-143"></a>Again, use the *code* shortcut to trigger different options. Hereby we see some:</span>
-<span id="cb16-144"><a href="#cb16-144"></a></span>
-<span id="cb16-145"><a href="#cb16-145"></a>**Simple code block**</span>
-<span id="cb16-146"><a href="#cb16-146"></a></span>
-<span id="cb16-147"><a href="#cb16-147"></a><span class="in">```         </span></span>
-<span id="cb16-148"><a href="#cb16-148"></a><span class="in">Code example</span></span>
-<span id="cb16-149"><a href="#cb16-149"></a><span class="in">```</span></span>
-<span id="cb16-150"><a href="#cb16-150"></a></span>
-<span id="cb16-151"><a href="#cb16-151"></a>**Inline code**</span>
-<span id="cb16-152"><a href="#cb16-152"></a></span>
-<span id="cb16-153"><a href="#cb16-153"></a><span class="in">`code example`</span></span>
-<span id="cb16-154"><a href="#cb16-154"></a></span>
-<span id="cb16-155"><a href="#cb16-155"></a>**Fenced code block**: here you can specify the programming language:</span>
-<span id="cb16-156"><a href="#cb16-156"></a></span>
-<span id="cb16-157"><a href="#cb16-157"></a>**Python**</span>
-<span id="cb16-158"><a href="#cb16-158"></a></span>
-<span id="cb16-159"><a href="#cb16-159"></a><span class="in">``` python</span></span>
-<span id="cb16-160"><a href="#cb16-160"></a>x <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb16-161"><a href="#cb16-161"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
-<span id="cb16-162"><a href="#cb16-162"></a>    <span class="bu">print</span>(i) </span>
-<span id="cb16-163"><a href="#cb16-163"></a><span class="in">```</span></span>
-<span id="cb16-164"><a href="#cb16-164"></a></span>
-<span id="cb16-165"><a href="#cb16-165"></a>**C#**</span>
-<span id="cb16-166"><a href="#cb16-166"></a></span>
-<span id="cb16-167"><a href="#cb16-167"></a><span class="in">``` c#</span></span>
-<span id="cb16-168"><a href="#cb16-168"></a><span class="dt">var</span> x <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb16-169"><a href="#cb16-169"></a><span class="kw">for</span><span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">;</span> i<span class="op">++)</span></span>
-<span id="cb16-170"><a href="#cb16-170"></a><span class="op">{</span></span>
-<span id="cb16-171"><a href="#cb16-171"></a>    Console<span class="op">.</span><span class="fu">WriteLine</span><span class="op">(</span>i<span class="op">)</span></span>
-<span id="cb16-172"><a href="#cb16-172"></a><span class="op">}</span></span>
-<span id="cb16-173"><a href="#cb16-173"></a><span class="in">```</span></span>
-<span id="cb16-174"><a href="#cb16-174"></a></span>
-<span id="cb16-175"><a href="#cb16-175"></a>**Default language**: Pandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:</span>
-<span id="cb16-176"><a href="#cb16-176"></a></span>
-<span id="cb16-177"><a href="#cb16-177"></a><span class="in">``` default</span></span>
-<span id="cb16-178"><a href="#cb16-178"></a><span class="in">yada yada</span></span>
-<span id="cb16-179"><a href="#cb16-179"></a><span class="in">```</span></span>
-<span id="cb16-180"><a href="#cb16-180"></a></span>
-<span id="cb16-181"><a href="#cb16-181"></a>**Executable code block**: Not that many are currently supported but Python is.</span>
-<span id="cb16-182"><a href="#cb16-182"></a></span>
-<span id="cb16-185"><a href="#cb16-185"></a><span class="in">```{python}</span></span>
-<span id="cb16-186"><a href="#cb16-186"></a>x <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb16-187"><a href="#cb16-187"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
-<span id="cb16-188"><a href="#cb16-188"></a>    <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">' '</span>) </span>
-<span id="cb16-189"><a href="#cb16-189"></a><span class="in">```</span></span>
-<span id="cb16-190"><a href="#cb16-190"></a></span>
-<span id="cb16-191"><a href="#cb16-191"></a>You can even run some external program. In this example, let us run <span class="in">`code.py`</span>:</span>
-<span id="cb16-192"><a href="#cb16-192"></a></span>
-<span id="cb16-193"><a href="#cb16-193"></a><span class="in">``` {.python filename="example.py"}</span></span>
-<span id="cb16-194"><a href="#cb16-194"></a>x <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb16-195"><a href="#cb16-195"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
-<span id="cb16-196"><a href="#cb16-196"></a>    <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">' '</span>) </span>
-<span id="cb16-197"><a href="#cb16-197"></a><span class="in">```</span></span>
-<span id="cb16-198"><a href="#cb16-198"></a></span>
-<span id="cb16-199"><a href="#cb16-199"></a>We can also go to a new page as follows: {{&lt; pagebreak &gt;}}</span>
-<span id="cb16-200"><a href="#cb16-200"></a></span>
-<span id="cb16-201"><a href="#cb16-201"></a><span class="fu">#### Code Annotation</span></span>
-<span id="cb16-202"><a href="#cb16-202"></a>Code blocks and executable code cells in Quarto can include line-based annotations. Line-based annotations provide a way to attach explanation to lines of code much like footnotes.</span>
-<span id="cb16-203"><a href="#cb16-203"></a></span>
-<span id="cb16-204"><a href="#cb16-204"></a>Annotations for a code cell consist of two related elements:</span>
-<span id="cb16-205"><a href="#cb16-205"></a></span>
-<span id="cb16-206"><a href="#cb16-206"></a><span class="ss">1. </span>Each annotated line should be terminated with a comment (using the code cell’s language comment character) followed by a space and then an annotation number enclosed in angle brackets (e.g. # &lt;2&gt;). You may repeat an annotation number if the annotation spans multiple lines.</span>
-<span id="cb16-207"><a href="#cb16-207"></a><span class="ss">2. </span>An ordered list that appears immediately after the code cell which includes the contents of each annotation. Each numbered item in the ordered list will correspond to the line(s) of code with the same annotation number.</span>
-<span id="cb16-208"><a href="#cb16-208"></a></span>
-<span id="cb16-209"><a href="#cb16-209"></a><span class="in">```python</span></span>
-<span id="cb16-210"><a href="#cb16-210"></a><span class="kw">def</span> compute_triangle_area(base, height):</span>
-<span id="cb16-211"><a href="#cb16-211"></a>    <span class="cf">assert</span>(<span class="bu">isinstance</span>(base, [<span class="bu">float</span>, <span class="bu">int</span>])), <span class="ss">f"base should be of type float, but got a </span><span class="sc">{</span><span class="bu">type</span>(base)<span class="sc">}</span><span class="ss"> type"</span>         <span class="co"># &lt;1&gt;</span></span>
-<span id="cb16-212"><a href="#cb16-212"></a>    <span class="cf">assert</span>(<span class="bu">isinstance</span>(height, [<span class="bu">float</span>, <span class="bu">int</span>])), <span class="ss">f" height should be of type float, but got a </span><span class="sc">{</span><span class="bu">type</span>(height)<span class="sc">}</span><span class="ss"> type"</span> <span class="co"># &lt;1&gt;</span></span>
-<span id="cb16-213"><a href="#cb16-213"></a>    <span class="cf">return</span> base <span class="op">*</span> height <span class="co"># &lt;2&gt;</span></span>
-<span id="cb16-214"><a href="#cb16-214"></a><span class="in">```</span></span>
-<span id="cb16-215"><a href="#cb16-215"></a><span class="ss">1. </span>Checks if both <span class="in">`base`</span> and <span class="in">`height`</span> are of type <span class="in">`int`</span> or <span class="in">`float`</span>, throws an error otherwise.</span>
-<span id="cb16-216"><a href="#cb16-216"></a><span class="ss">2. </span>Returns the triangle area: $A = b \times h$.</span>
-<span id="cb16-217"><a href="#cb16-217"></a></span>
-<span id="cb16-218"><a href="#cb16-218"></a><span class="fu">### Raw content</span></span>
-<span id="cb16-219"><a href="#cb16-219"></a></span>
-<span id="cb16-220"><a href="#cb16-220"></a>Raw content can be included directly without Quarto parsing it using Pandoc’s raw attribute. Here is an example of an HTML block</span>
-<span id="cb16-221"><a href="#cb16-221"></a></span>
-<span id="cb16-222"><a href="#cb16-222"></a><span class="in">```{=html}</span></span>
-<span id="cb16-223"><a href="#cb16-223"></a><span class="in">&lt;iframe src="https://quarto.org/" width="500" height="400"&gt;&lt;/iframe&gt;</span></span>
-<span id="cb16-224"><a href="#cb16-224"></a><span class="in">```</span></span>
-<span id="cb16-225"><a href="#cb16-225"></a></span>
-<span id="cb16-226"><a href="#cb16-226"></a>You can also add *inline* raw content like this: Here's some raw inline HTML: <span class="dt">&lt;</span><span class="kw">a</span><span class="dt">&gt;</span>html<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
-<span id="cb16-227"><a href="#cb16-227"></a></span>
-<span id="cb16-228"><a href="#cb16-228"></a><span class="fu">### Images</span></span>
-<span id="cb16-229"><a href="#cb16-229"></a></span>
-<span id="cb16-230"><a href="#cb16-230"></a>See <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/figures.html)</span>.</span>
-<span id="cb16-231"><a href="#cb16-231"></a></span>
-<span id="cb16-232"><a href="#cb16-232"></a><span class="fu">### Tables</span></span>
-<span id="cb16-233"><a href="#cb16-233"></a></span>
-<span id="cb16-234"><a href="#cb16-234"></a>See <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/tables.html)</span></span>
-<span id="cb16-235"><a href="#cb16-235"></a></span>
-<span id="cb16-236"><a href="#cb16-236"></a><span class="fu">### Diagrams</span></span>
-<span id="cb16-237"><a href="#cb16-237"></a></span>
-<span id="cb16-238"><a href="#cb16-238"></a>Quarto has native support for embedding <span class="co">[</span><span class="ot">Mermaid</span><span class="co">](https://mermaid.js.org/#/)</span> and <span class="co">[</span><span class="ot">Graphviz</span><span class="co">](https://graphviz.org/)</span> diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, Gantt charts, and more using a plain text syntax inspired by markdown.</span>
-<span id="cb16-239"><a href="#cb16-239"></a></span>
-<span id="cb16-240"><a href="#cb16-240"></a>For example, here we embed a flowchart created using Mermaid:</span>
-<span id="cb16-241"><a href="#cb16-241"></a></span>
-<span id="cb16-244"><a href="#cb16-244"></a><span class="in">```{mermaid}</span></span>
-<span id="cb16-245"><a href="#cb16-245"></a>flowchart LR</span>
-<span id="cb16-246"><a href="#cb16-246"></a>  A[Hard edge] --&gt; B(Round edge)</span>
-<span id="cb16-247"><a href="#cb16-247"></a>  B --&gt; C{Decision}</span>
-<span id="cb16-248"><a href="#cb16-248"></a>  C --&gt; D[Result one]</span>
-<span id="cb16-249"><a href="#cb16-249"></a>  C --&gt; E[Result two]</span>
-<span id="cb16-250"><a href="#cb16-250"></a><span class="in">```</span></span>
-<span id="cb16-251"><a href="#cb16-251"></a></span>
-<span id="cb16-252"><a href="#cb16-252"></a><span class="fu">### Videos</span></span>
-<span id="cb16-253"><a href="#cb16-253"></a></span>
-<span id="cb16-254"><a href="#cb16-254"></a>You can include videos in documents using the as follows {{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}} Videos can refer to video files (e.g. MPEG) or can be links to videos published on YouTube, Vimeo, or Brightcove.</span>
-<span id="cb16-255"><a href="#cb16-255"></a></span>
-<span id="cb16-256"><a href="#cb16-256"></a><span class="fu">### Divs and spans</span></span>
-<span id="cb16-257"><a href="#cb16-257"></a></span>
-<span id="cb16-258"><a href="#cb16-258"></a>You can add classes, attributes, and other identifiers to regions of content using Divs and Spans. Although the terms Div and Span originate in HTML, the syntax is used in Quarto across output formats. For example, Callout Blocks are specified using the div syntax, and Small Caps are specified using the span syntax, and both work for many formats beyond HTML. You may also use CSS and/or a Filter along with Divs and Spans to provide styling or other behavior within rendered documents beyond what Quarto provides.</span>
-<span id="cb16-259"><a href="#cb16-259"></a></span>
-<span id="cb16-260"><a href="#cb16-260"></a><span class="fu">##### Divs</span></span>
-<span id="cb16-261"><a href="#cb16-261"></a></span>
-<span id="cb16-262"><a href="#cb16-262"></a>For example, here we add the “border” class to a region of content using a div (<span class="in">`:::`</span>):</span>
-<span id="cb16-263"><a href="#cb16-263"></a></span>
-<span id="cb16-264"><a href="#cb16-264"></a>Divs start with a fence containing at least three consecutive colons plus some attributes. The attributes may optionally be followed by another string of consecutive colons. The Div ends with another line containing a string of at least three consecutive colons. The Div should be separated by blank lines from preceding and following blocks. Divs may also be nested. For example</span>
-<span id="cb16-265"><a href="#cb16-265"></a></span>
-<span id="cb16-266"><a href="#cb16-266"></a>:::: {#special .sidebar}</span>
-<span id="cb16-267"><a href="#cb16-267"></a>::: warning</span>
-<span id="cb16-268"><a href="#cb16-268"></a>Here is a warning.</span>
-<span id="cb16-269"><a href="#cb16-269"></a>:::</span>
-<span id="cb16-270"><a href="#cb16-270"></a></span>
-<span id="cb16-271"><a href="#cb16-271"></a>More content.</span>
-<span id="cb16-272"><a href="#cb16-272"></a>::::</span>
-<span id="cb16-273"><a href="#cb16-273"></a></span>
-<span id="cb16-274"><a href="#cb16-274"></a>::: border</span>
-<span id="cb16-275"><a href="#cb16-275"></a>This content can be styled with a border</span>
-<span id="cb16-276"><a href="#cb16-276"></a>:::</span>
-<span id="cb16-277"><a href="#cb16-277"></a></span>
-<span id="cb16-278"><a href="#cb16-278"></a><span class="fu">##### Spans</span></span>
-<span id="cb16-279"><a href="#cb16-279"></a></span>
-<span id="cb16-280"><a href="#cb16-280"></a>A bracketed sequence of inlines, as one would use to begin a link, will be treated as a Span with attributes if it is followed immediately by attributes:</span>
-<span id="cb16-281"><a href="#cb16-281"></a></span>
-<span id="cb16-282"><a href="#cb16-282"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span>
-<span id="cb16-283"><a href="#cb16-283"></a></span>
-<span id="cb16-284"><a href="#cb16-284"></a>To create text in small caps, that is underlined, or that is highlighted, use a span with one of the classes .smallcaps, .underline or .mark respectively.</span>
-<span id="cb16-285"><a href="#cb16-285"></a></span>
-<span id="cb16-286"><a href="#cb16-286"></a><span class="co">[</span><span class="ot">This text is smallcaps</span><span class="co">]</span>{.smallcaps}</span>
-<span id="cb16-287"><a href="#cb16-287"></a></span>
-<span id="cb16-288"><a href="#cb16-288"></a><span class="co">[</span><span class="ot">This text is underlined</span><span class="co">]</span>{.underline}</span>
-<span id="cb16-289"><a href="#cb16-289"></a></span>
-<span id="cb16-290"><a href="#cb16-290"></a><span class="co">[</span><span class="ot">This text is highlighted</span><span class="co">]</span>{.mark}</span>
-<span id="cb16-291"><a href="#cb16-291"></a></span>
-<span id="cb16-292"><a href="#cb16-292"></a><span class="fu">### Callout Blocks</span></span>
-<span id="cb16-293"><a href="#cb16-293"></a></span>
-<span id="cb16-294"><a href="#cb16-294"></a>Callouts are an excellent way to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios.</span>
-<span id="cb16-295"><a href="#cb16-295"></a></span>
-<span id="cb16-296"><a href="#cb16-296"></a>There are five different types of callouts available.</span>
-<span id="cb16-297"><a href="#cb16-297"></a></span>
-<span id="cb16-298"><a href="#cb16-298"></a><span class="ss">-   </span><span class="in">`note`</span></span>
-<span id="cb16-299"><a href="#cb16-299"></a><span class="ss">-   </span><span class="in">`warning`</span></span>
-<span id="cb16-300"><a href="#cb16-300"></a><span class="ss">-   </span><span class="in">`important`</span></span>
-<span id="cb16-301"><a href="#cb16-301"></a><span class="ss">-   </span><span class="in">`tip`</span></span>
-<span id="cb16-302"><a href="#cb16-302"></a><span class="ss">-   </span><span class="in">`caution`</span></span>
-<span id="cb16-303"><a href="#cb16-303"></a></span>
-<span id="cb16-304"><a href="#cb16-304"></a>::: callout-note</span>
-<span id="cb16-305"><a href="#cb16-305"></a>Note that there are five types of callouts, including: <span class="in">`note`</span>, <span class="in">`warning`</span>, <span class="in">`important`</span>, <span class="in">`tip`</span>, and <span class="in">`caution`</span>.</span>
-<span id="cb16-306"><a href="#cb16-306"></a>:::</span>
-<span id="cb16-307"><a href="#cb16-307"></a></span>
-<span id="cb16-308"><a href="#cb16-308"></a>::: callout-tip</span>
-<span id="cb16-309"><a href="#cb16-309"></a><span class="fu">## Tip with Title</span></span>
-<span id="cb16-310"><a href="#cb16-310"></a></span>
-<span id="cb16-311"><a href="#cb16-311"></a>This is an example of a callout with a title.</span>
-<span id="cb16-312"><a href="#cb16-312"></a>:::</span>
-<span id="cb16-313"><a href="#cb16-313"></a></span>
-<span id="cb16-314"><a href="#cb16-314"></a>::: {.callout-tip title="Tip with Title"}</span>
-<span id="cb16-315"><a href="#cb16-315"></a>This is a callout with a title.</span>
-<span id="cb16-316"><a href="#cb16-316"></a>:::</span>
-<span id="cb16-317"><a href="#cb16-317"></a></span>
-<span id="cb16-318"><a href="#cb16-318"></a>::: {.callout-caution collapse="true"}</span>
-<span id="cb16-319"><a href="#cb16-319"></a><span class="fu">## Expand To Learn About Collapse\*\*</span></span>
-<span id="cb16-320"><a href="#cb16-320"></a></span>
-<span id="cb16-321"><a href="#cb16-321"></a>This is an example of a 'folded' caution callout that can be expanded by the user. You can use <span class="in">`collapse="true"`</span> to collapse it by default or <span class="in">`collapse="false"`</span> to make a collapsible callout that is expanded by default.</span>
-<span id="cb16-322"><a href="#cb16-322"></a>:::</span>
-<span id="cb16-323"><a href="#cb16-323"></a></span>
-<span id="cb16-324"><a href="#cb16-324"></a>You can customize the style of these <span class="in">`callout blocks`</span>.</span>
-<span id="cb16-325"><a href="#cb16-325"></a></span>
-<span id="cb16-326"><a href="#cb16-326"></a>::: {.callout-note appearance="simple"}</span>
-<span id="cb16-327"><a href="#cb16-327"></a><span class="fu">## Pay Attention</span></span>
-<span id="cb16-328"><a href="#cb16-328"></a></span>
-<span id="cb16-329"><a href="#cb16-329"></a>Using callouts is an effective way to highlight content that your reader give special consideration or attention.</span>
-<span id="cb16-330"><a href="#cb16-330"></a>:::</span>
-<span id="cb16-331"><a href="#cb16-331"></a></span>
-<span id="cb16-332"><a href="#cb16-332"></a>You can also remove the icon if you want</span>
-<span id="cb16-333"><a href="#cb16-333"></a></span>
-<span id="cb16-334"><a href="#cb16-334"></a>::: {.callout-note icon="false"}</span>
-<span id="cb16-335"><a href="#cb16-335"></a><span class="fu">## Pay Attention</span></span>
-<span id="cb16-336"><a href="#cb16-336"></a></span>
-<span id="cb16-337"><a href="#cb16-337"></a>Using callouts is an effective way to highlight content that your reader give special consideration or attention.</span>
-<span id="cb16-338"><a href="#cb16-338"></a>:::</span>
-<span id="cb16-339"><a href="#cb16-339"></a></span>
-<span id="cb16-340"><a href="#cb16-340"></a>Finally, you can cross reference blocks using the customary <span class="in">`@`</span></span>
-<span id="cb16-341"><a href="#cb16-341"></a></span>
-<span id="cb16-342"><a href="#cb16-342"></a>::: {#tip-example .callout-tip}</span>
-<span id="cb16-343"><a href="#cb16-343"></a><span class="fu">## Cross-Referencing a Tip</span></span>
-<span id="cb16-344"><a href="#cb16-344"></a></span>
-<span id="cb16-345"><a href="#cb16-345"></a>Add an ID starting with <span class="in">`#tip-`</span> to reference a tip.</span>
-<span id="cb16-346"><a href="#cb16-346"></a>:::</span>
-<span id="cb16-347"><a href="#cb16-347"></a></span>
-<span id="cb16-348"><a href="#cb16-348"></a>See @tip-example...</span>
-<span id="cb16-349"><a href="#cb16-349"></a></span>
-<span id="cb16-350"><a href="#cb16-350"></a><span class="pp">|</span> Callout Type <span class="pp">|</span> Prefix <span class="pp">|</span></span>
-<span id="cb16-351"><a href="#cb16-351"></a><span class="pp">|--------------|--------|</span></span>
-<span id="cb16-352"><a href="#cb16-352"></a><span class="pp">|</span>    <span class="in">`note`</span>    <span class="pp">|</span> <span class="in">`#nte-`</span><span class="pp">|</span></span>
-<span id="cb16-353"><a href="#cb16-353"></a><span class="pp">|</span>    <span class="in">`tip`</span>     <span class="pp">|</span> <span class="in">`#tip-`</span><span class="pp">|</span></span>
-<span id="cb16-354"><a href="#cb16-354"></a><span class="pp">|</span>    <span class="in">`warning`</span> <span class="pp">|</span> <span class="in">`#wrn-`</span><span class="pp">|</span></span>
-<span id="cb16-355"><a href="#cb16-355"></a><span class="pp">|</span>  <span class="in">`important`</span> <span class="pp">|</span> <span class="in">`#imp-`</span><span class="pp">|</span></span>
-<span id="cb16-356"><a href="#cb16-356"></a><span class="pp">|</span>  <span class="in">`caution`</span>   <span class="pp">|</span> <span class="in">`#cau-`</span><span class="pp">|</span></span>
-<span id="cb16-357"><a href="#cb16-357"></a></span>
-<span id="cb16-358"><a href="#cb16-358"></a>: Prefixes for callout cross-references</span>
-<span id="cb16-359"><a href="#cb16-359"></a></span>
-<span id="cb16-360"><a href="#cb16-360"></a><span class="fu">### Shortcuts</span></span>
-<span id="cb16-361"><a href="#cb16-361"></a></span>
-<span id="cb16-362"><a href="#cb16-362"></a>There are some shortcuts thta make writing in *Quarto* faster;</span>
-<span id="cb16-363"><a href="#cb16-363"></a></span>
-<span id="cb16-364"><a href="#cb16-364"></a><span class="fu">#### Pre-installed</span></span>
-<span id="cb16-365"><a href="#cb16-365"></a></span>
-<span id="cb16-366"><a href="#cb16-366"></a>Here is a list of words that you can type on the keyboard to trigger different functionalities (via *autocompletion*):</span>
-<span id="cb16-367"><a href="#cb16-367"></a></span>
-<span id="cb16-368"><a href="#cb16-368"></a><span class="ss">-   </span>**list**: to create one ordered (with numbers) or not (with dots);</span>
-<span id="cb16-369"><a href="#cb16-369"></a><span class="ss">-   </span>**code**: to trigger anything code-related;</span>
-<span id="cb16-370"><a href="#cb16-370"></a><span class="ss">-   </span>**italic**: to trigger italic mode;</span>
-<span id="cb16-371"><a href="#cb16-371"></a><span class="ss">-   </span>**bold**: to trigger bold;</span>
-<span id="cb16-372"><a href="#cb16-372"></a><span class="ss">-   </span>**strikethrough**: to trigger something ~~like this~~;</span>
-<span id="cb16-373"><a href="#cb16-373"></a></span>
-<span id="cb16-374"><a href="#cb16-374"></a><span class="fu">#### Custom-shortcuts</span></span>
-<span id="cb16-375"><a href="#cb16-375"></a>::: {.callout-important collapse="true"}</span>
-<span id="cb16-376"><a href="#cb16-376"></a><span class="fu">## Custom shortcuts to complete</span></span>
-<span id="cb16-377"><a href="#cb16-377"></a></span>
-<span id="cb16-378"><a href="#cb16-378"></a>To Do!</span>
-<span id="cb16-379"><a href="#cb16-379"></a>:::</span>
-<span id="cb16-380"><a href="#cb16-380"></a></span>
-<span id="cb16-381"><a href="#cb16-381"></a><span class="fu">### Customization</span></span>
-<span id="cb16-382"><a href="#cb16-382"></a></span>
-<span id="cb16-383"><a href="#cb16-383"></a><span class="fu">#### `brand.yml`</span></span>
-<span id="cb16-384"><a href="#cb16-384"></a>Quarto supports <span class="in">`brand.yml`</span>—a single <span class="in">`YAML`</span> file that can be used to customize the appearance of your documents across multiple formats. This is particularly useful for organizations that need a unified look across various formats.</span>
-<span id="cb16-385"><a href="#cb16-385"></a></span>
-<span id="cb16-386"><a href="#cb16-386"></a>**An example**</span>
-<span id="cb16-387"><a href="#cb16-387"></a><span class="in">```default</span></span>
-<span id="cb16-388"><a href="#cb16-388"></a><span class="in">color:</span></span>
-<span id="cb16-389"><a href="#cb16-389"></a><span class="in">  palette:</span></span>
-<span id="cb16-390"><a href="#cb16-390"></a><span class="in">    dark-grey: "#222222"</span></span>
-<span id="cb16-391"><a href="#cb16-391"></a><span class="in">    blue: "#ddeaf1"</span></span>
-<span id="cb16-392"><a href="#cb16-392"></a><span class="in">  background: blue</span></span>
-<span id="cb16-393"><a href="#cb16-393"></a><span class="in">  foreground: dark-grey</span></span>
-<span id="cb16-394"><a href="#cb16-394"></a><span class="in">  primary: black</span></span>
-<span id="cb16-395"><a href="#cb16-395"></a></span>
-<span id="cb16-396"><a href="#cb16-396"></a><span class="in">logo: </span></span>
-<span id="cb16-397"><a href="#cb16-397"></a><span class="in">  medium: logo.png</span></span>
-<span id="cb16-398"><a href="#cb16-398"></a></span>
-<span id="cb16-399"><a href="#cb16-399"></a><span class="in">typography:</span></span>
-<span id="cb16-400"><a href="#cb16-400"></a><span class="in">  fonts:</span></span>
-<span id="cb16-401"><a href="#cb16-401"></a><span class="in">    - family: Jura</span></span>
-<span id="cb16-402"><a href="#cb16-402"></a><span class="in">      source: google</span></span>
-<span id="cb16-403"><a href="#cb16-403"></a><span class="in">  base: Jura</span></span>
-<span id="cb16-404"><a href="#cb16-404"></a><span class="in">  headings: Jura</span></span>
-<span id="cb16-405"><a href="#cb16-405"></a><span class="in">```</span></span>
-<span id="cb16-406"><a href="#cb16-406"></a></span>
-<span id="cb16-407"><a href="#cb16-407"></a>The elements of <span class="in">`brand.yml`</span> are specified in the documentation for the <span class="co">[</span><span class="ot">brand.yml project</span><span class="co">](https://posit-dev.github.io/brand-yml/)</span>. In this section, learn how these elements are used in Quarto.</span>
-<span id="cb16-408"><a href="#cb16-408"></a></span>
-<span id="cb16-409"><a href="#cb16-409"></a><span class="fu">#### Colors</span></span>
-<span id="cb16-410"><a href="#cb16-410"></a>Use <span class="in">`color`</span> to define your brand’s color palette and map your palette to the roles colors play, a.k.a semantic colors. A simple example might define the value background to a light blue:</span>
-<span id="cb16-411"><a href="#cb16-411"></a><span class="in">```default</span></span>
-<span id="cb16-412"><a href="#cb16-412"></a><span class="in">color:</span></span>
-<span id="cb16-413"><a href="#cb16-413"></a><span class="in">  background: "#ddeaf1"</span></span>
-<span id="cb16-414"><a href="#cb16-414"></a><span class="in">```</span></span>
-<span id="cb16-415"><a href="#cb16-415"></a></span>
-<span id="cb16-416"><a href="#cb16-416"></a><span class="fu">#### Margin cotent</span></span>
-<span id="cb16-417"><a href="#cb16-417"></a>You can place content within the right margin of Quarto document. For example, here we use the <span class="in">`.column-margin`</span> class to place an image in the margin:</span>
-<span id="cb16-418"><a href="#cb16-418"></a></span>
-<span id="cb16-419"><a href="#cb16-419"></a>$$</span>
-<span id="cb16-420"><a href="#cb16-420"></a>e^{i\pi} = 1</span>
-<span id="cb16-421"><a href="#cb16-421"></a>$$</span>
-<span id="cb16-422"><a href="#cb16-422"></a></span>
-<span id="cb16-423"><a href="#cb16-423"></a>::: {.column-margin}</span>
-<span id="cb16-424"><a href="#cb16-424"></a>We know from *the first fundamental theorem of calculus* that for $x$ in $<span class="co">[</span><span class="ot">a, b</span><span class="co">]</span>$:</span>
-<span id="cb16-425"><a href="#cb16-425"></a>$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$</span>
-<span id="cb16-426"><a href="#cb16-426"></a>:::</span>
-<span id="cb16-427"><a href="#cb16-427"></a></span>
-<span id="cb16-428"><a href="#cb16-428"></a>Clearly, this can be done with images as well.</span>
-<span id="cb16-429"><a href="#cb16-429"></a></span>
-<span id="cb16-430"><a href="#cb16-430"></a><span class="fu">#### Margin figures</span></span>
-<span id="cb16-431"><a href="#cb16-431"></a>Figures that you create using code cells can be placed in the margin by using the column: margin code cell option. If the code produces more than one figure, each of the figures will be placed in the margin.</span>
-<span id="cb16-432"><a href="#cb16-432"></a></span>
-<span id="cb16-433"><a href="#cb16-433"></a><span class="in">```default</span></span>
-<span id="cb16-434"><a href="#cb16-434"></a><span class="in">#| label: fig-mtcars</span></span>
-<span id="cb16-435"><a href="#cb16-435"></a><span class="in">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
-<span id="cb16-436"><a href="#cb16-436"></a><span class="in">#| column: margin</span></span>
-<span id="cb16-437"><a href="#cb16-437"></a></span>
-<span id="cb16-438"><a href="#cb16-438"></a><span class="in">library(ggplot2)</span></span>
-<span id="cb16-439"><a href="#cb16-439"></a><span class="in">mtcars2 &lt;- mtcars</span></span>
-<span id="cb16-440"><a href="#cb16-440"></a><span class="in">mtcars2$am &lt;- factor(</span></span>
-<span id="cb16-441"><a href="#cb16-441"></a><span class="in">  mtcars$am, labels = c('automatic', 'manual')</span></span>
-<span id="cb16-442"><a href="#cb16-442"></a><span class="in">)</span></span>
-<span id="cb16-443"><a href="#cb16-443"></a><span class="in">ggplot(mtcars2, aes(hp, mpg, color = am)) +</span></span>
-<span id="cb16-444"><a href="#cb16-444"></a><span class="in">  geom_point() +</span></span>
-<span id="cb16-445"><a href="#cb16-445"></a><span class="in">  geom_smooth(formula = y ~ x, method = "loess") +</span></span>
-<span id="cb16-446"><a href="#cb16-446"></a><span class="in">  theme(legend.position = 'bottom')```</span></span>
-<span id="cb16-447"><a href="#cb16-447"></a><span class="in">```</span></span>
-<span id="cb16-448"><a href="#cb16-448"></a></span>
-<span id="cb16-449"><a href="#cb16-449"></a><span class="fu">#### Margin refereces</span></span>
-<span id="cb16-450"><a href="#cb16-450"></a>Footnotes and the bibliography typically appear at the end of the document, but you can choose to have them placed in the margin by setting the following option1 in the document front matter:</span>
-<span id="cb16-451"><a href="#cb16-451"></a><span class="in">```default</span></span>
-<span id="cb16-452"><a href="#cb16-452"></a><span class="in">---</span></span>
-<span id="cb16-453"><a href="#cb16-453"></a><span class="in">reference-location: margin</span></span>
-<span id="cb16-454"><a href="#cb16-454"></a><span class="in">citation-location: margin</span></span>
-<span id="cb16-455"><a href="#cb16-455"></a><span class="in">---</span></span>
-<span id="cb16-456"><a href="#cb16-456"></a><span class="in">```</span></span>
-<span id="cb16-457"><a href="#cb16-457"></a>With these options set, footnotes and citations will (respectively) be automatically be placed in the margin of the document rather than the bottom of the page. As an example, when I cite Xie, Allaire, and Grolemund (<span class="co">[</span><span class="ot">2018</span><span class="co">](https://bookdown.org/yihui/rmarkdown/)</span>), the citation bibliography entry itself will now appear in the margin.</span>
-<span id="cb16-458"><a href="#cb16-458"></a></span>
-<span id="cb16-459"><a href="#cb16-459"></a><span class="fu">#### Asides</span></span>
-<span id="cb16-460"><a href="#cb16-460"></a>Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).</span>
-<span id="cb16-461"><a href="#cb16-461"></a><span class="co">[</span><span class="ot">This is a span that has the class `aside` which places it in the margin without a footnote number.</span><span class="co">]</span>{.aside}</span>
-<span id="cb16-462"><a href="#cb16-462"></a></span>
-<span id="cb16-463"><a href="#cb16-463"></a><span class="fu">#### Margin captions</span></span>
-<span id="cb16-464"><a href="#cb16-464"></a>For figures and tables, you may leave the content in the body of the document while placing the caption in the margin of the document. Using cap-location: margin in a code cell or document front matter to control this. For example:</span>
-<span id="cb16-465"><a href="#cb16-465"></a><span class="in">```default</span></span>
-<span id="cb16-466"><a href="#cb16-466"></a><span class="in">#| label: fig-cap-margin</span></span>
-<span id="cb16-467"><a href="#cb16-467"></a><span class="in">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
-<span id="cb16-468"><a href="#cb16-468"></a><span class="in">#| cap-location: margin</span></span>
-<span id="cb16-469"><a href="#cb16-469"></a></span>
-<span id="cb16-470"><a href="#cb16-470"></a><span class="in">library(ggplot2)</span></span>
-<span id="cb16-471"><a href="#cb16-471"></a><span class="in">mtcars2 &lt;- mtcars</span></span>
-<span id="cb16-472"><a href="#cb16-472"></a><span class="in">mtcars2$am &lt;- factor(</span></span>
-<span id="cb16-473"><a href="#cb16-473"></a><span class="in">  mtcars$am, labels = c('automatic', 'manual')</span></span>
-<span id="cb16-474"><a href="#cb16-474"></a><span class="in">)</span></span>
-<span id="cb16-475"><a href="#cb16-475"></a><span class="in">ggplot(mtcars2, aes(hp, mpg, color = am)) +</span></span>
-<span id="cb16-476"><a href="#cb16-476"></a><span class="in">  geom_point() +</span></span>
-<span id="cb16-477"><a href="#cb16-477"></a><span class="in">  geom_smooth(formula = y ~ x, method = "loess") +</span></span>
-<span id="cb16-478"><a href="#cb16-478"></a><span class="in">  theme(legend.position = 'bottom')</span></span>
-<span id="cb16-479"><a href="#cb16-479"></a><span class="in">```</span></span>
-<span id="cb16-480"><a href="#cb16-480"></a></span>
-<span id="cb16-481"><a href="#cb16-481"></a><span class="fu">#### Using classes</span></span>
-<span id="cb16-482"><a href="#cb16-482"></a>In addition to global and code cell specific options, you may use divs with layout classes (prefixed with <span class="in">`.column-`</span>) to arrange content into columns:</span>
-<span id="cb16-483"><a href="#cb16-483"></a></span>
-<span id="cb16-484"><a href="#cb16-484"></a>::: {.column-margin}</span>
-<span id="cb16-485"><a href="#cb16-485"></a>This content will appear in the margin!</span>
-<span id="cb16-486"><a href="#cb16-486"></a>:::</span>
-<span id="cb16-487"><a href="#cb16-487"></a></span>
-<span id="cb16-488"><a href="#cb16-488"></a><span class="fu">### Tabsets</span></span>
-<span id="cb16-489"><a href="#cb16-489"></a></span>
-<span id="cb16-490"><a href="#cb16-490"></a>::: {.panel-tabset}</span>
-<span id="cb16-491"><a href="#cb16-491"></a><span class="fu">## R</span></span>
-<span id="cb16-492"><a href="#cb16-492"></a></span>
-<span id="cb16-493"><a href="#cb16-493"></a><span class="in">``` {.r}</span></span>
-<span id="cb16-494"><a href="#cb16-494"></a>fizz_buzz <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">fbnums =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>) {</span>
-<span id="cb16-495"><a href="#cb16-495"></a>  output <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>(</span>
-<span id="cb16-496"><a href="#cb16-496"></a>    fbnums <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"FizzBuzz"</span>,</span>
-<span id="cb16-497"><a href="#cb16-497"></a>    fbnums <span class="sc">%%</span> <span class="dv">3</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Fizz"</span>,</span>
-<span id="cb16-498"><a href="#cb16-498"></a>    fbnums <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Buzz"</span>,</span>
-<span id="cb16-499"><a href="#cb16-499"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as.character</span>(fbnums)</span>
-<span id="cb16-500"><a href="#cb16-500"></a>  )</span>
-<span id="cb16-501"><a href="#cb16-501"></a>  <span class="fu">print</span>(output)</span>
-<span id="cb16-502"><a href="#cb16-502"></a>}</span>
-<span id="cb16-503"><a href="#cb16-503"></a><span class="in">```</span></span>
-<span id="cb16-504"><a href="#cb16-504"></a></span>
-<span id="cb16-505"><a href="#cb16-505"></a><span class="fu">## Python</span></span>
-<span id="cb16-506"><a href="#cb16-506"></a></span>
-<span id="cb16-507"><a href="#cb16-507"></a><span class="in">``` {.python}</span></span>
-<span id="cb16-508"><a href="#cb16-508"></a><span class="kw">def</span> fizz_buzz(num):</span>
-<span id="cb16-509"><a href="#cb16-509"></a>  <span class="cf">if</span> num <span class="op">%</span> <span class="dv">15</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb16-510"><a href="#cb16-510"></a>    <span class="bu">print</span>(<span class="st">"FizzBuzz"</span>)</span>
-<span id="cb16-511"><a href="#cb16-511"></a>  <span class="cf">elif</span> num <span class="op">%</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb16-512"><a href="#cb16-512"></a>    <span class="bu">print</span>(<span class="st">"Buzz"</span>)</span>
-<span id="cb16-513"><a href="#cb16-513"></a>  <span class="cf">elif</span> num <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb16-514"><a href="#cb16-514"></a>    <span class="bu">print</span>(<span class="st">"Fizz"</span>)</span>
-<span id="cb16-515"><a href="#cb16-515"></a>  <span class="cf">else</span>:</span>
-<span id="cb16-516"><a href="#cb16-516"></a>    <span class="bu">print</span>(num)</span>
-<span id="cb16-517"><a href="#cb16-517"></a><span class="in">```</span></span>
-<span id="cb16-518"><a href="#cb16-518"></a></span>
-<span id="cb16-519"><a href="#cb16-519"></a>:::</span>
-<span id="cb16-520"><a href="#cb16-520"></a></span>
-<span id="cb16-521"><a href="#cb16-521"></a><span class="fu">### Citations</span></span>
-<span id="cb16-522"><a href="#cb16-522"></a>Quarto will use Pandoc to automatically generate citations and a bibliography in a number of styles. To use this capability, you will need:</span>
-<span id="cb16-523"><a href="#cb16-523"></a></span>
-<span id="cb16-524"><a href="#cb16-524"></a><span class="ss">1. </span>A quarto document formatted with citations (see <span class="co">[</span><span class="ot">Citation Markdown</span><span class="co">](https://quarto.org/docs/authoring/citations.html#sec-citations)</span>).</span>
-<span id="cb16-525"><a href="#cb16-525"></a><span class="ss">2. </span>A bibliographic data source, for example a BibLaTeX (<span class="in">`.bib`</span>) or BibTeX (<span class="in">`.bibtex`</span>) file.</span>
-<span id="cb16-526"><a href="#cb16-526"></a><span class="ss">3. </span>Optionally, a <span class="in">`CSL`</span> file which specifies the formatting to use when generating the citations and bibliography (when not using <span class="in">`natbib`</span> or <span class="in">`biblatex`</span> to generate the bibliography).</span>
-<span id="cb16-527"><a href="#cb16-527"></a></span>
-<span id="cb16-528"><a href="#cb16-528"></a>In the front, just add <span class="in">`bibliography: references.bib`</span>.</span>
+<span id="cb16-16"><a href="#cb16-16"></a><span class="an">css:</span><span class="co"> /styles.css</span></span>
+<span id="cb16-17"><a href="#cb16-17"></a><span class="an">respect-user-color-scheme:</span><span class="co"> true</span></span>
+<span id="cb16-18"><a href="#cb16-18"></a><span class="an">code-line-numbers:</span><span class="co"> true</span></span>
+<span id="cb16-19"><a href="#cb16-19"></a><span class="an">code-summary:</span><span class="co"> "Show the code"</span></span>
+<span id="cb16-20"><a href="#cb16-20"></a><span class="an">number-sections:</span><span class="co"> true</span></span>
+<span id="cb16-21"><a href="#cb16-21"></a><span class="an">code-annotations:</span><span class="co"> hover</span></span>
+<span id="cb16-22"><a href="#cb16-22"></a><span class="an">date:</span><span class="co"> 08 May 2025</span></span>
+<span id="cb16-23"><a href="#cb16-23"></a><span class="an">categories:</span><span class="co"> [quarto, tutorial]</span></span>
+<span id="cb16-24"><a href="#cb16-24"></a><span class="an">image:</span><span class="co"> thumbnail.png</span></span>
+<span id="cb16-25"><a href="#cb16-25"></a><span class="an">keywords:</span></span>
+<span id="cb16-26"><a href="#cb16-26"></a><span class="co">  - Some Keyword</span></span>
+<span id="cb16-27"><a href="#cb16-27"></a><span class="co">  - Some other keyword</span></span>
+<span id="cb16-28"><a href="#cb16-28"></a><span class="an">abstract:</span><span class="co"> &gt; </span></span>
+<span id="cb16-29"><a href="#cb16-29"></a><span class="co">  I experiment and and learn (some) stuff that quarto can do, from math to code, from images to tables, etc...</span></span>
+<span id="cb16-30"><a href="#cb16-30"></a><span class="co">---</span></span>
+<span id="cb16-31"><a href="#cb16-31"></a></span>
+<span id="cb16-32"><a href="#cb16-32"></a><span class="fu">## What can you do?</span></span>
+<span id="cb16-33"><a href="#cb16-33"></a></span>
+<span id="cb16-34"><a href="#cb16-34"></a><span class="fu">### Typical workflow</span></span>
+<span id="cb16-35"><a href="#cb16-35"></a></span>
+<span id="cb16-36"><a href="#cb16-36"></a>Each time you want to create a new blog post:</span>
+<span id="cb16-37"><a href="#cb16-37"></a></span>
+<span id="cb16-38"><a href="#cb16-38"></a><span class="ss">1. </span>Create a new directory inside the posts folder with your post name</span>
+<span id="cb16-39"><a href="#cb16-39"></a><span class="ss">2. </span>Add an <span class="in">`index.qmd`</span> file inside this directory</span>
+<span id="cb16-40"><a href="#cb16-40"></a><span class="ss">3. </span>Add any related resources (images, data) in the same directory</span>
+<span id="cb16-41"><a href="#cb16-41"></a><span class="ss">4. </span>Write your content using Markdown, code chunks, and LaTeX</span>
+<span id="cb16-42"><a href="#cb16-42"></a><span class="ss">5. </span>Render and preview locally with <span class="in">`quarto preview`</span></span>
+<span id="cb16-43"><a href="#cb16-43"></a><span class="ss">6. </span>Build the site with <span class="in">`quarto render`</span></span>
+<span id="cb16-44"><a href="#cb16-44"></a><span class="ss">7. </span>Commit and push changes to <span class="in">`GitHub`</span></span>
+<span id="cb16-45"><a href="#cb16-45"></a></span>
+<span id="cb16-46"><a href="#cb16-46"></a><span class="fu">### Text</span></span>
+<span id="cb16-47"><a href="#cb16-47"></a></span>
+<span id="cb16-48"><a href="#cb16-48"></a>A comprehensive guide can be found <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/markdown-basics.html)</span>.</span>
+<span id="cb16-49"><a href="#cb16-49"></a></span>
+<span id="cb16-50"><a href="#cb16-50"></a>Here is some simple text. You can</span>
+<span id="cb16-51"><a href="#cb16-51"></a></span>
+<span id="cb16-52"><a href="#cb16-52"></a><span class="ss">-   </span>*use very differnt styles*: italics, bold, verbatim, super/subscripts, strikethrough, etc.</span>
+<span id="cb16-53"><a href="#cb16-53"></a><span class="ss">-   </span>*Make headings*: using #. Using more <span class="sc">\#</span>'s makes the headings smaller.</span>
+<span id="cb16-54"><a href="#cb16-54"></a><span class="ss">-   </span>Create differnt types of *lists and task checkers*; **NB:** You need a blank line before the list to be rendered as such;</span>
+<span id="cb16-55"><a href="#cb16-55"></a><span class="ss">-   </span>*Use footnotes*: this is possible like this;<span class="ot">[^1]</span></span>
+<span id="cb16-56"><a href="#cb16-56"></a><span class="ss">-   </span>*Use tables*;</span>
+<span id="cb16-57"><a href="#cb16-57"></a></span>
+<span id="cb16-58"><a href="#cb16-58"></a><span class="ot">[^1]: </span>Here is a footnote.</span>
+<span id="cb16-59"><a href="#cb16-59"></a></span>
+<span id="cb16-60"><a href="#cb16-60"></a><span class="fu">### Math</span></span>
+<span id="cb16-61"><a href="#cb16-61"></a></span>
+<span id="cb16-62"><a href="#cb16-62"></a>You can do many things with mathematics.</span>
+<span id="cb16-63"><a href="#cb16-63"></a></span>
+<span id="cb16-64"><a href="#cb16-64"></a><span class="ss">-   </span>*Inline math*: $x = y$.</span>
+<span id="cb16-65"><a href="#cb16-65"></a><span class="ss">-   </span>*Math block*: $$ e^{i \pi} = 1$$</span>
+<span id="cb16-66"><a href="#cb16-66"></a></span>
+<span id="cb16-67"><a href="#cb16-67"></a>yada yada</span>
+<span id="cb16-68"><a href="#cb16-68"></a></span>
+<span id="cb16-69"><a href="#cb16-69"></a>\begin{equation}</span>
+<span id="cb16-70"><a href="#cb16-70"></a>\boxed{</span>
+<span id="cb16-71"><a href="#cb16-71"></a>\frac{f(x)}{\mathbfcal{H}(y)} = \int_a^b h(z, x, y)dz</span>
+<span id="cb16-72"><a href="#cb16-72"></a>}</span>
+<span id="cb16-73"><a href="#cb16-73"></a>\end{equation}</span>
+<span id="cb16-74"><a href="#cb16-74"></a></span>
+<span id="cb16-75"><a href="#cb16-75"></a>You can also define custom *latex* macros by using *hidden blocks* as follows:</span>
+<span id="cb16-76"><a href="#cb16-76"></a></span>
+<span id="cb16-77"><a href="#cb16-77"></a>::: hidden</span>
+<span id="cb16-78"><a href="#cb16-78"></a>$$</span>
+<span id="cb16-79"><a href="#cb16-79"></a> \def\RR{{\bf R}}</span>
+<span id="cb16-80"><a href="#cb16-80"></a> \def\bold#1{{\bf #1}}</span>
+<span id="cb16-81"><a href="#cb16-81"></a> \def\fr#1#2{{\frac{#1}{#2}}}</span>
+<span id="cb16-82"><a href="#cb16-82"></a>$$</span>
+<span id="cb16-83"><a href="#cb16-83"></a>:::</span>
+<span id="cb16-84"><a href="#cb16-84"></a></span>
+<span id="cb16-85"><a href="#cb16-85"></a>$\RR$ $\bold x$ $\fr a b$ $\mathbf{x}$</span>
+<span id="cb16-86"><a href="#cb16-86"></a></span>
+<span id="cb16-87"><a href="#cb16-87"></a><span class="fu">#### Theorems and proofs</span></span>
+<span id="cb16-88"><a href="#cb16-88"></a>Theorems are commonly used in articles and books in mathematics. To include a reference-able theorem, create a div with a <span class="in">`#thm-`</span> label (or one of other theorem-type labels described <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/cross-references.html)</span>). You also need to specify a theorem name either via the first heading in the block. You can include any content you like within the div. For example:</span>
+<span id="cb16-89"><a href="#cb16-89"></a></span>
+<span id="cb16-90"><a href="#cb16-90"></a>::: {#thm-line}</span>
+<span id="cb16-91"><a href="#cb16-91"></a></span>
+<span id="cb16-92"><a href="#cb16-92"></a><span class="fu">## Line</span></span>
+<span id="cb16-93"><a href="#cb16-93"></a></span>
+<span id="cb16-94"><a href="#cb16-94"></a>The equation of any straight line, called a linear equation, can be written as:</span>
+<span id="cb16-95"><a href="#cb16-95"></a></span>
+<span id="cb16-96"><a href="#cb16-96"></a>$$</span>
+<span id="cb16-97"><a href="#cb16-97"></a>y = mx + b</span>
+<span id="cb16-98"><a href="#cb16-98"></a>$$</span>
+<span id="cb16-99"><a href="#cb16-99"></a>:::</span>
+<span id="cb16-100"><a href="#cb16-100"></a></span>
+<span id="cb16-101"><a href="#cb16-101"></a>See @thm-line.</span>
+<span id="cb16-102"><a href="#cb16-102"></a></span>
+<span id="cb16-103"><a href="#cb16-103"></a>::: {#lem-}</span>
+<span id="cb16-104"><a href="#cb16-104"></a></span>
+<span id="cb16-105"><a href="#cb16-105"></a><span class="fu">## Some lemma</span></span>
+<span id="cb16-106"><a href="#cb16-106"></a></span>
+<span id="cb16-107"><a href="#cb16-107"></a>Statement</span>
+<span id="cb16-108"><a href="#cb16-108"></a>:::</span>
+<span id="cb16-109"><a href="#cb16-109"></a></span>
+<span id="cb16-110"><a href="#cb16-110"></a>:::: {#.proof}</span>
+<span id="cb16-111"><a href="#cb16-111"></a>the proof</span>
+<span id="cb16-112"><a href="#cb16-112"></a>::::</span>
+<span id="cb16-113"><a href="#cb16-113"></a></span>
+<span id="cb16-114"><a href="#cb16-114"></a><span class="fu">#### Equations</span></span>
+<span id="cb16-115"><a href="#cb16-115"></a>Provide an <span class="in">`#eq-`</span> label immediately after an equation to make it referenceable. For example:</span>
+<span id="cb16-116"><a href="#cb16-116"></a></span>
+<span id="cb16-117"><a href="#cb16-117"></a>Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:</span>
+<span id="cb16-118"><a href="#cb16-118"></a></span>
+<span id="cb16-119"><a href="#cb16-119"></a>$$</span>
+<span id="cb16-120"><a href="#cb16-120"></a>\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}</span>
+<span id="cb16-121"><a href="#cb16-121"></a>\frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}</span>
+<span id="cb16-122"><a href="#cb16-122"></a><span class="ss">  + </span>\mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =</span>
+<span id="cb16-123"><a href="#cb16-123"></a>  \mathrm r \mathrm C </span>
+<span id="cb16-124"><a href="#cb16-124"></a>$$ {#eq-black-scholes}</span>
+<span id="cb16-125"><a href="#cb16-125"></a></span>
+<span id="cb16-126"><a href="#cb16-126"></a>::: {#rem-}</span>
+<span id="cb16-127"><a href="#cb16-127"></a>Numbers on equations appear if you include a label (same for theorems, lemas, etc..).</span>
+<span id="cb16-128"><a href="#cb16-128"></a>:::</span>
+<span id="cb16-129"><a href="#cb16-129"></a></span>
+<span id="cb16-130"><a href="#cb16-130"></a><span class="fu">#### Sections</span></span>
+<span id="cb16-131"><a href="#cb16-131"></a>To reference a section, add a <span class="in">`#sec-`</span> identifier to any heading.</span>
+<span id="cb16-132"><a href="#cb16-132"></a></span>
+<span id="cb16-133"><a href="#cb16-133"></a>Note that when using section cross-references, you will also need to enable the number-sections option (so that section numbering is visible to readers). For example:</span>
+<span id="cb16-134"><a href="#cb16-134"></a></span>
+<span id="cb16-135"><a href="#cb16-135"></a><span class="in">```default</span></span>
+<span id="cb16-136"><a href="#cb16-136"></a><span class="in">---</span></span>
+<span id="cb16-137"><a href="#cb16-137"></a><span class="in">title: "My Document"</span></span>
+<span id="cb16-138"><a href="#cb16-138"></a><span class="in">number-sections: true</span></span>
+<span id="cb16-139"><a href="#cb16-139"></a><span class="in">---</span></span>
+<span id="cb16-140"><a href="#cb16-140"></a><span class="in">```</span></span>
+<span id="cb16-141"><a href="#cb16-141"></a></span>
+<span id="cb16-142"><a href="#cb16-142"></a><span class="fu">### Code</span></span>
+<span id="cb16-143"><a href="#cb16-143"></a></span>
+<span id="cb16-144"><a href="#cb16-144"></a>Again, use the *code* shortcut to trigger different options. Hereby we see some:</span>
+<span id="cb16-145"><a href="#cb16-145"></a></span>
+<span id="cb16-146"><a href="#cb16-146"></a>**Simple code block**</span>
+<span id="cb16-147"><a href="#cb16-147"></a></span>
+<span id="cb16-148"><a href="#cb16-148"></a><span class="in">```         </span></span>
+<span id="cb16-149"><a href="#cb16-149"></a><span class="in">Code example</span></span>
+<span id="cb16-150"><a href="#cb16-150"></a><span class="in">```</span></span>
+<span id="cb16-151"><a href="#cb16-151"></a></span>
+<span id="cb16-152"><a href="#cb16-152"></a>**Inline code**</span>
+<span id="cb16-153"><a href="#cb16-153"></a></span>
+<span id="cb16-154"><a href="#cb16-154"></a><span class="in">`code example`</span></span>
+<span id="cb16-155"><a href="#cb16-155"></a></span>
+<span id="cb16-156"><a href="#cb16-156"></a>**Fenced code block**: here you can specify the programming language:</span>
+<span id="cb16-157"><a href="#cb16-157"></a></span>
+<span id="cb16-158"><a href="#cb16-158"></a>**Python**</span>
+<span id="cb16-159"><a href="#cb16-159"></a></span>
+<span id="cb16-160"><a href="#cb16-160"></a><span class="in">``` python</span></span>
+<span id="cb16-161"><a href="#cb16-161"></a>x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb16-162"><a href="#cb16-162"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
+<span id="cb16-163"><a href="#cb16-163"></a>    <span class="bu">print</span>(i) </span>
+<span id="cb16-164"><a href="#cb16-164"></a><span class="in">```</span></span>
+<span id="cb16-165"><a href="#cb16-165"></a></span>
+<span id="cb16-166"><a href="#cb16-166"></a>**C#**</span>
+<span id="cb16-167"><a href="#cb16-167"></a></span>
+<span id="cb16-168"><a href="#cb16-168"></a><span class="in">``` c#</span></span>
+<span id="cb16-169"><a href="#cb16-169"></a><span class="dt">var</span> x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb16-170"><a href="#cb16-170"></a><span class="kw">for</span><span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> x<span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb16-171"><a href="#cb16-171"></a><span class="op">{</span></span>
+<span id="cb16-172"><a href="#cb16-172"></a>    Console<span class="op">.</span><span class="fu">WriteLine</span><span class="op">(</span>i<span class="op">)</span></span>
+<span id="cb16-173"><a href="#cb16-173"></a><span class="op">}</span></span>
+<span id="cb16-174"><a href="#cb16-174"></a><span class="in">```</span></span>
+<span id="cb16-175"><a href="#cb16-175"></a></span>
+<span id="cb16-176"><a href="#cb16-176"></a>**Default language**: Pandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:</span>
+<span id="cb16-177"><a href="#cb16-177"></a></span>
+<span id="cb16-178"><a href="#cb16-178"></a><span class="in">``` default</span></span>
+<span id="cb16-179"><a href="#cb16-179"></a><span class="in">yada yada</span></span>
+<span id="cb16-180"><a href="#cb16-180"></a><span class="in">```</span></span>
+<span id="cb16-181"><a href="#cb16-181"></a></span>
+<span id="cb16-182"><a href="#cb16-182"></a>**Executable code block**: Not that many are currently supported but Python is.</span>
+<span id="cb16-183"><a href="#cb16-183"></a></span>
+<span id="cb16-186"><a href="#cb16-186"></a><span class="in">```{python}</span></span>
+<span id="cb16-187"><a href="#cb16-187"></a>x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb16-188"><a href="#cb16-188"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
+<span id="cb16-189"><a href="#cb16-189"></a>    <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">' '</span>) </span>
+<span id="cb16-190"><a href="#cb16-190"></a><span class="in">```</span></span>
+<span id="cb16-191"><a href="#cb16-191"></a></span>
+<span id="cb16-192"><a href="#cb16-192"></a>You can even run some external program. In this example, let us run <span class="in">`code.py`</span>:</span>
+<span id="cb16-193"><a href="#cb16-193"></a></span>
+<span id="cb16-194"><a href="#cb16-194"></a><span class="in">``` {.python filename="example.py"}</span></span>
+<span id="cb16-195"><a href="#cb16-195"></a>x <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb16-196"><a href="#cb16-196"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(x):</span>
+<span id="cb16-197"><a href="#cb16-197"></a>    <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">' '</span>) </span>
+<span id="cb16-198"><a href="#cb16-198"></a><span class="in">```</span></span>
+<span id="cb16-199"><a href="#cb16-199"></a></span>
+<span id="cb16-200"><a href="#cb16-200"></a>We can also go to a new page as follows: {{&lt; pagebreak &gt;}}</span>
+<span id="cb16-201"><a href="#cb16-201"></a></span>
+<span id="cb16-202"><a href="#cb16-202"></a><span class="fu">#### Code Annotation</span></span>
+<span id="cb16-203"><a href="#cb16-203"></a>Code blocks and executable code cells in Quarto can include line-based annotations. Line-based annotations provide a way to attach explanation to lines of code much like footnotes.</span>
+<span id="cb16-204"><a href="#cb16-204"></a></span>
+<span id="cb16-205"><a href="#cb16-205"></a>Annotations for a code cell consist of two related elements:</span>
+<span id="cb16-206"><a href="#cb16-206"></a></span>
+<span id="cb16-207"><a href="#cb16-207"></a><span class="ss">1. </span>Each annotated line should be terminated with a comment (using the code cell’s language comment character) followed by a space and then an annotation number enclosed in angle brackets (e.g. # &lt;2&gt;). You may repeat an annotation number if the annotation spans multiple lines.</span>
+<span id="cb16-208"><a href="#cb16-208"></a><span class="ss">2. </span>An ordered list that appears immediately after the code cell which includes the contents of each annotation. Each numbered item in the ordered list will correspond to the line(s) of code with the same annotation number.</span>
+<span id="cb16-209"><a href="#cb16-209"></a></span>
+<span id="cb16-210"><a href="#cb16-210"></a><span class="in">```python</span></span>
+<span id="cb16-211"><a href="#cb16-211"></a><span class="kw">def</span> compute_triangle_area(base, height):</span>
+<span id="cb16-212"><a href="#cb16-212"></a>    <span class="cf">assert</span>(<span class="bu">isinstance</span>(base, [<span class="bu">float</span>, <span class="bu">int</span>])), <span class="ss">f"base should be of type float, but got a </span><span class="sc">{</span><span class="bu">type</span>(base)<span class="sc">}</span><span class="ss"> type"</span>         <span class="co"># &lt;1&gt;</span></span>
+<span id="cb16-213"><a href="#cb16-213"></a>    <span class="cf">assert</span>(<span class="bu">isinstance</span>(height, [<span class="bu">float</span>, <span class="bu">int</span>])), <span class="ss">f" height should be of type float, but got a </span><span class="sc">{</span><span class="bu">type</span>(height)<span class="sc">}</span><span class="ss"> type"</span> <span class="co"># &lt;1&gt;</span></span>
+<span id="cb16-214"><a href="#cb16-214"></a>    <span class="cf">return</span> base <span class="op">*</span> height <span class="co"># &lt;2&gt;</span></span>
+<span id="cb16-215"><a href="#cb16-215"></a><span class="in">```</span></span>
+<span id="cb16-216"><a href="#cb16-216"></a><span class="ss">1. </span>Checks if both <span class="in">`base`</span> and <span class="in">`height`</span> are of type <span class="in">`int`</span> or <span class="in">`float`</span>, throws an error otherwise.</span>
+<span id="cb16-217"><a href="#cb16-217"></a><span class="ss">2. </span>Returns the triangle area: $A = b \times h$.</span>
+<span id="cb16-218"><a href="#cb16-218"></a></span>
+<span id="cb16-219"><a href="#cb16-219"></a><span class="fu">### Raw content</span></span>
+<span id="cb16-220"><a href="#cb16-220"></a></span>
+<span id="cb16-221"><a href="#cb16-221"></a>Raw content can be included directly without Quarto parsing it using Pandoc’s raw attribute. Here is an example of an HTML block</span>
+<span id="cb16-222"><a href="#cb16-222"></a></span>
+<span id="cb16-223"><a href="#cb16-223"></a><span class="in">```{=html}</span></span>
+<span id="cb16-224"><a href="#cb16-224"></a><span class="in">&lt;iframe src="https://quarto.org/" width="500" height="400"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb16-225"><a href="#cb16-225"></a><span class="in">```</span></span>
+<span id="cb16-226"><a href="#cb16-226"></a></span>
+<span id="cb16-227"><a href="#cb16-227"></a>You can also add *inline* raw content like this: Here's some raw inline HTML: <span class="dt">&lt;</span><span class="kw">a</span><span class="dt">&gt;</span>html<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb16-228"><a href="#cb16-228"></a></span>
+<span id="cb16-229"><a href="#cb16-229"></a><span class="fu">### Images</span></span>
+<span id="cb16-230"><a href="#cb16-230"></a></span>
+<span id="cb16-231"><a href="#cb16-231"></a>See <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/figures.html)</span>.</span>
+<span id="cb16-232"><a href="#cb16-232"></a></span>
+<span id="cb16-233"><a href="#cb16-233"></a><span class="fu">### Tables</span></span>
+<span id="cb16-234"><a href="#cb16-234"></a></span>
+<span id="cb16-235"><a href="#cb16-235"></a>See <span class="co">[</span><span class="ot">here</span><span class="co">](https://quarto.org/docs/authoring/tables.html)</span></span>
+<span id="cb16-236"><a href="#cb16-236"></a></span>
+<span id="cb16-237"><a href="#cb16-237"></a><span class="fu">### Diagrams</span></span>
+<span id="cb16-238"><a href="#cb16-238"></a></span>
+<span id="cb16-239"><a href="#cb16-239"></a>Quarto has native support for embedding <span class="co">[</span><span class="ot">Mermaid</span><span class="co">](https://mermaid.js.org/#/)</span> and <span class="co">[</span><span class="ot">Graphviz</span><span class="co">](https://graphviz.org/)</span> diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, Gantt charts, and more using a plain text syntax inspired by markdown.</span>
+<span id="cb16-240"><a href="#cb16-240"></a></span>
+<span id="cb16-241"><a href="#cb16-241"></a>For example, here we embed a flowchart created using Mermaid:</span>
+<span id="cb16-242"><a href="#cb16-242"></a></span>
+<span id="cb16-245"><a href="#cb16-245"></a><span class="in">```{mermaid}</span></span>
+<span id="cb16-246"><a href="#cb16-246"></a>flowchart LR</span>
+<span id="cb16-247"><a href="#cb16-247"></a>  A[Hard edge] --&gt; B(Round edge)</span>
+<span id="cb16-248"><a href="#cb16-248"></a>  B --&gt; C{Decision}</span>
+<span id="cb16-249"><a href="#cb16-249"></a>  C --&gt; D[Result one]</span>
+<span id="cb16-250"><a href="#cb16-250"></a>  C --&gt; E[Result two]</span>
+<span id="cb16-251"><a href="#cb16-251"></a><span class="in">```</span></span>
+<span id="cb16-252"><a href="#cb16-252"></a></span>
+<span id="cb16-253"><a href="#cb16-253"></a><span class="fu">### Videos</span></span>
+<span id="cb16-254"><a href="#cb16-254"></a></span>
+<span id="cb16-255"><a href="#cb16-255"></a>You can include videos in documents using the as follows {{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}} Videos can refer to video files (e.g. MPEG) or can be links to videos published on YouTube, Vimeo, or Brightcove.</span>
+<span id="cb16-256"><a href="#cb16-256"></a></span>
+<span id="cb16-257"><a href="#cb16-257"></a><span class="fu">### Divs and spans</span></span>
+<span id="cb16-258"><a href="#cb16-258"></a></span>
+<span id="cb16-259"><a href="#cb16-259"></a>You can add classes, attributes, and other identifiers to regions of content using Divs and Spans. Although the terms Div and Span originate in HTML, the syntax is used in Quarto across output formats. For example, Callout Blocks are specified using the div syntax, and Small Caps are specified using the span syntax, and both work for many formats beyond HTML. You may also use CSS and/or a Filter along with Divs and Spans to provide styling or other behavior within rendered documents beyond what Quarto provides.</span>
+<span id="cb16-260"><a href="#cb16-260"></a></span>
+<span id="cb16-261"><a href="#cb16-261"></a><span class="fu">##### Divs</span></span>
+<span id="cb16-262"><a href="#cb16-262"></a></span>
+<span id="cb16-263"><a href="#cb16-263"></a>For example, here we add the “border” class to a region of content using a div (<span class="in">`:::`</span>):</span>
+<span id="cb16-264"><a href="#cb16-264"></a></span>
+<span id="cb16-265"><a href="#cb16-265"></a>Divs start with a fence containing at least three consecutive colons plus some attributes. The attributes may optionally be followed by another string of consecutive colons. The Div ends with another line containing a string of at least three consecutive colons. The Div should be separated by blank lines from preceding and following blocks. Divs may also be nested. For example</span>
+<span id="cb16-266"><a href="#cb16-266"></a></span>
+<span id="cb16-267"><a href="#cb16-267"></a>:::: {#special .sidebar}</span>
+<span id="cb16-268"><a href="#cb16-268"></a>::: warning</span>
+<span id="cb16-269"><a href="#cb16-269"></a>Here is a warning.</span>
+<span id="cb16-270"><a href="#cb16-270"></a>:::</span>
+<span id="cb16-271"><a href="#cb16-271"></a></span>
+<span id="cb16-272"><a href="#cb16-272"></a>More content.</span>
+<span id="cb16-273"><a href="#cb16-273"></a>::::</span>
+<span id="cb16-274"><a href="#cb16-274"></a></span>
+<span id="cb16-275"><a href="#cb16-275"></a>::: border</span>
+<span id="cb16-276"><a href="#cb16-276"></a>This content can be styled with a border</span>
+<span id="cb16-277"><a href="#cb16-277"></a>:::</span>
+<span id="cb16-278"><a href="#cb16-278"></a></span>
+<span id="cb16-279"><a href="#cb16-279"></a><span class="fu">##### Spans</span></span>
+<span id="cb16-280"><a href="#cb16-280"></a></span>
+<span id="cb16-281"><a href="#cb16-281"></a>A bracketed sequence of inlines, as one would use to begin a link, will be treated as a Span with attributes if it is followed immediately by attributes:</span>
+<span id="cb16-282"><a href="#cb16-282"></a></span>
+<span id="cb16-283"><a href="#cb16-283"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span>
+<span id="cb16-284"><a href="#cb16-284"></a></span>
+<span id="cb16-285"><a href="#cb16-285"></a>To create text in small caps, that is underlined, or that is highlighted, use a span with one of the classes .smallcaps, .underline or .mark respectively.</span>
+<span id="cb16-286"><a href="#cb16-286"></a></span>
+<span id="cb16-287"><a href="#cb16-287"></a><span class="co">[</span><span class="ot">This text is smallcaps</span><span class="co">]</span>{.smallcaps}</span>
+<span id="cb16-288"><a href="#cb16-288"></a></span>
+<span id="cb16-289"><a href="#cb16-289"></a><span class="co">[</span><span class="ot">This text is underlined</span><span class="co">]</span>{.underline}</span>
+<span id="cb16-290"><a href="#cb16-290"></a></span>
+<span id="cb16-291"><a href="#cb16-291"></a><span class="co">[</span><span class="ot">This text is highlighted</span><span class="co">]</span>{.mark}</span>
+<span id="cb16-292"><a href="#cb16-292"></a></span>
+<span id="cb16-293"><a href="#cb16-293"></a><span class="fu">### Callout Blocks</span></span>
+<span id="cb16-294"><a href="#cb16-294"></a></span>
+<span id="cb16-295"><a href="#cb16-295"></a>Callouts are an excellent way to draw extra attention to certain concepts, or to more clearly indicate that certain content is supplemental or applicable to only some scenarios.</span>
+<span id="cb16-296"><a href="#cb16-296"></a></span>
+<span id="cb16-297"><a href="#cb16-297"></a>There are five different types of callouts available.</span>
+<span id="cb16-298"><a href="#cb16-298"></a></span>
+<span id="cb16-299"><a href="#cb16-299"></a><span class="ss">-   </span><span class="in">`note`</span></span>
+<span id="cb16-300"><a href="#cb16-300"></a><span class="ss">-   </span><span class="in">`warning`</span></span>
+<span id="cb16-301"><a href="#cb16-301"></a><span class="ss">-   </span><span class="in">`important`</span></span>
+<span id="cb16-302"><a href="#cb16-302"></a><span class="ss">-   </span><span class="in">`tip`</span></span>
+<span id="cb16-303"><a href="#cb16-303"></a><span class="ss">-   </span><span class="in">`caution`</span></span>
+<span id="cb16-304"><a href="#cb16-304"></a></span>
+<span id="cb16-305"><a href="#cb16-305"></a>::: callout-note</span>
+<span id="cb16-306"><a href="#cb16-306"></a>Note that there are five types of callouts, including: <span class="in">`note`</span>, <span class="in">`warning`</span>, <span class="in">`important`</span>, <span class="in">`tip`</span>, and <span class="in">`caution`</span>.</span>
+<span id="cb16-307"><a href="#cb16-307"></a>:::</span>
+<span id="cb16-308"><a href="#cb16-308"></a></span>
+<span id="cb16-309"><a href="#cb16-309"></a>::: callout-tip</span>
+<span id="cb16-310"><a href="#cb16-310"></a><span class="fu">## Tip with Title</span></span>
+<span id="cb16-311"><a href="#cb16-311"></a></span>
+<span id="cb16-312"><a href="#cb16-312"></a>This is an example of a callout with a title.</span>
+<span id="cb16-313"><a href="#cb16-313"></a>:::</span>
+<span id="cb16-314"><a href="#cb16-314"></a></span>
+<span id="cb16-315"><a href="#cb16-315"></a>::: {.callout-tip title="Tip with Title"}</span>
+<span id="cb16-316"><a href="#cb16-316"></a>This is a callout with a title.</span>
+<span id="cb16-317"><a href="#cb16-317"></a>:::</span>
+<span id="cb16-318"><a href="#cb16-318"></a></span>
+<span id="cb16-319"><a href="#cb16-319"></a>::: {.callout-caution collapse="true"}</span>
+<span id="cb16-320"><a href="#cb16-320"></a><span class="fu">## Expand To Learn About Collapse\*\*</span></span>
+<span id="cb16-321"><a href="#cb16-321"></a></span>
+<span id="cb16-322"><a href="#cb16-322"></a>This is an example of a 'folded' caution callout that can be expanded by the user. You can use <span class="in">`collapse="true"`</span> to collapse it by default or <span class="in">`collapse="false"`</span> to make a collapsible callout that is expanded by default.</span>
+<span id="cb16-323"><a href="#cb16-323"></a>:::</span>
+<span id="cb16-324"><a href="#cb16-324"></a></span>
+<span id="cb16-325"><a href="#cb16-325"></a>You can customize the style of these <span class="in">`callout blocks`</span>.</span>
+<span id="cb16-326"><a href="#cb16-326"></a></span>
+<span id="cb16-327"><a href="#cb16-327"></a>::: {.callout-note appearance="simple"}</span>
+<span id="cb16-328"><a href="#cb16-328"></a><span class="fu">## Pay Attention</span></span>
+<span id="cb16-329"><a href="#cb16-329"></a></span>
+<span id="cb16-330"><a href="#cb16-330"></a>Using callouts is an effective way to highlight content that your reader give special consideration or attention.</span>
+<span id="cb16-331"><a href="#cb16-331"></a>:::</span>
+<span id="cb16-332"><a href="#cb16-332"></a></span>
+<span id="cb16-333"><a href="#cb16-333"></a>You can also remove the icon if you want</span>
+<span id="cb16-334"><a href="#cb16-334"></a></span>
+<span id="cb16-335"><a href="#cb16-335"></a>::: {.callout-note icon="false"}</span>
+<span id="cb16-336"><a href="#cb16-336"></a><span class="fu">## Pay Attention</span></span>
+<span id="cb16-337"><a href="#cb16-337"></a></span>
+<span id="cb16-338"><a href="#cb16-338"></a>Using callouts is an effective way to highlight content that your reader give special consideration or attention.</span>
+<span id="cb16-339"><a href="#cb16-339"></a>:::</span>
+<span id="cb16-340"><a href="#cb16-340"></a></span>
+<span id="cb16-341"><a href="#cb16-341"></a>Finally, you can cross reference blocks using the customary <span class="in">`@`</span></span>
+<span id="cb16-342"><a href="#cb16-342"></a></span>
+<span id="cb16-343"><a href="#cb16-343"></a>::: {#tip-example .callout-tip}</span>
+<span id="cb16-344"><a href="#cb16-344"></a><span class="fu">## Cross-Referencing a Tip</span></span>
+<span id="cb16-345"><a href="#cb16-345"></a></span>
+<span id="cb16-346"><a href="#cb16-346"></a>Add an ID starting with <span class="in">`#tip-`</span> to reference a tip.</span>
+<span id="cb16-347"><a href="#cb16-347"></a>:::</span>
+<span id="cb16-348"><a href="#cb16-348"></a></span>
+<span id="cb16-349"><a href="#cb16-349"></a>See @tip-example...</span>
+<span id="cb16-350"><a href="#cb16-350"></a></span>
+<span id="cb16-351"><a href="#cb16-351"></a><span class="pp">|</span> Callout Type <span class="pp">|</span> Prefix <span class="pp">|</span></span>
+<span id="cb16-352"><a href="#cb16-352"></a><span class="pp">|--------------|--------|</span></span>
+<span id="cb16-353"><a href="#cb16-353"></a><span class="pp">|</span>    <span class="in">`note`</span>    <span class="pp">|</span> <span class="in">`#nte-`</span><span class="pp">|</span></span>
+<span id="cb16-354"><a href="#cb16-354"></a><span class="pp">|</span>    <span class="in">`tip`</span>     <span class="pp">|</span> <span class="in">`#tip-`</span><span class="pp">|</span></span>
+<span id="cb16-355"><a href="#cb16-355"></a><span class="pp">|</span>    <span class="in">`warning`</span> <span class="pp">|</span> <span class="in">`#wrn-`</span><span class="pp">|</span></span>
+<span id="cb16-356"><a href="#cb16-356"></a><span class="pp">|</span>  <span class="in">`important`</span> <span class="pp">|</span> <span class="in">`#imp-`</span><span class="pp">|</span></span>
+<span id="cb16-357"><a href="#cb16-357"></a><span class="pp">|</span>  <span class="in">`caution`</span>   <span class="pp">|</span> <span class="in">`#cau-`</span><span class="pp">|</span></span>
+<span id="cb16-358"><a href="#cb16-358"></a></span>
+<span id="cb16-359"><a href="#cb16-359"></a>: Prefixes for callout cross-references</span>
+<span id="cb16-360"><a href="#cb16-360"></a></span>
+<span id="cb16-361"><a href="#cb16-361"></a><span class="fu">### Shortcuts</span></span>
+<span id="cb16-362"><a href="#cb16-362"></a></span>
+<span id="cb16-363"><a href="#cb16-363"></a>There are some shortcuts thta make writing in *Quarto* faster;</span>
+<span id="cb16-364"><a href="#cb16-364"></a></span>
+<span id="cb16-365"><a href="#cb16-365"></a><span class="fu">#### Pre-installed</span></span>
+<span id="cb16-366"><a href="#cb16-366"></a></span>
+<span id="cb16-367"><a href="#cb16-367"></a>Here is a list of words that you can type on the keyboard to trigger different functionalities (via *autocompletion*):</span>
+<span id="cb16-368"><a href="#cb16-368"></a></span>
+<span id="cb16-369"><a href="#cb16-369"></a><span class="ss">-   </span>**list**: to create one ordered (with numbers) or not (with dots);</span>
+<span id="cb16-370"><a href="#cb16-370"></a><span class="ss">-   </span>**code**: to trigger anything code-related;</span>
+<span id="cb16-371"><a href="#cb16-371"></a><span class="ss">-   </span>**italic**: to trigger italic mode;</span>
+<span id="cb16-372"><a href="#cb16-372"></a><span class="ss">-   </span>**bold**: to trigger bold;</span>
+<span id="cb16-373"><a href="#cb16-373"></a><span class="ss">-   </span>**strikethrough**: to trigger something ~~like this~~;</span>
+<span id="cb16-374"><a href="#cb16-374"></a></span>
+<span id="cb16-375"><a href="#cb16-375"></a><span class="fu">#### Custom-shortcuts</span></span>
+<span id="cb16-376"><a href="#cb16-376"></a>::: {.callout-important collapse="true"}</span>
+<span id="cb16-377"><a href="#cb16-377"></a><span class="fu">## Custom shortcuts to complete</span></span>
+<span id="cb16-378"><a href="#cb16-378"></a></span>
+<span id="cb16-379"><a href="#cb16-379"></a>To Do!</span>
+<span id="cb16-380"><a href="#cb16-380"></a>:::</span>
+<span id="cb16-381"><a href="#cb16-381"></a></span>
+<span id="cb16-382"><a href="#cb16-382"></a><span class="fu">### Customization</span></span>
+<span id="cb16-383"><a href="#cb16-383"></a></span>
+<span id="cb16-384"><a href="#cb16-384"></a><span class="fu">#### `brand.yml`</span></span>
+<span id="cb16-385"><a href="#cb16-385"></a>Quarto supports <span class="in">`brand.yml`</span>—a single <span class="in">`YAML`</span> file that can be used to customize the appearance of your documents across multiple formats. This is particularly useful for organizations that need a unified look across various formats.</span>
+<span id="cb16-386"><a href="#cb16-386"></a></span>
+<span id="cb16-387"><a href="#cb16-387"></a>**An example**</span>
+<span id="cb16-388"><a href="#cb16-388"></a><span class="in">```default</span></span>
+<span id="cb16-389"><a href="#cb16-389"></a><span class="in">color:</span></span>
+<span id="cb16-390"><a href="#cb16-390"></a><span class="in">  palette:</span></span>
+<span id="cb16-391"><a href="#cb16-391"></a><span class="in">    dark-grey: "#222222"</span></span>
+<span id="cb16-392"><a href="#cb16-392"></a><span class="in">    blue: "#ddeaf1"</span></span>
+<span id="cb16-393"><a href="#cb16-393"></a><span class="in">  background: blue</span></span>
+<span id="cb16-394"><a href="#cb16-394"></a><span class="in">  foreground: dark-grey</span></span>
+<span id="cb16-395"><a href="#cb16-395"></a><span class="in">  primary: black</span></span>
+<span id="cb16-396"><a href="#cb16-396"></a></span>
+<span id="cb16-397"><a href="#cb16-397"></a><span class="in">logo: </span></span>
+<span id="cb16-398"><a href="#cb16-398"></a><span class="in">  medium: logo.png</span></span>
+<span id="cb16-399"><a href="#cb16-399"></a></span>
+<span id="cb16-400"><a href="#cb16-400"></a><span class="in">typography:</span></span>
+<span id="cb16-401"><a href="#cb16-401"></a><span class="in">  fonts:</span></span>
+<span id="cb16-402"><a href="#cb16-402"></a><span class="in">    - family: Jura</span></span>
+<span id="cb16-403"><a href="#cb16-403"></a><span class="in">      source: google</span></span>
+<span id="cb16-404"><a href="#cb16-404"></a><span class="in">  base: Jura</span></span>
+<span id="cb16-405"><a href="#cb16-405"></a><span class="in">  headings: Jura</span></span>
+<span id="cb16-406"><a href="#cb16-406"></a><span class="in">```</span></span>
+<span id="cb16-407"><a href="#cb16-407"></a></span>
+<span id="cb16-408"><a href="#cb16-408"></a>The elements of <span class="in">`brand.yml`</span> are specified in the documentation for the <span class="co">[</span><span class="ot">brand.yml project</span><span class="co">](https://posit-dev.github.io/brand-yml/)</span>. In this section, learn how these elements are used in Quarto.</span>
+<span id="cb16-409"><a href="#cb16-409"></a></span>
+<span id="cb16-410"><a href="#cb16-410"></a><span class="fu">#### Colors</span></span>
+<span id="cb16-411"><a href="#cb16-411"></a>Use <span class="in">`color`</span> to define your brand’s color palette and map your palette to the roles colors play, a.k.a semantic colors. A simple example might define the value background to a light blue:</span>
+<span id="cb16-412"><a href="#cb16-412"></a><span class="in">```default</span></span>
+<span id="cb16-413"><a href="#cb16-413"></a><span class="in">color:</span></span>
+<span id="cb16-414"><a href="#cb16-414"></a><span class="in">  background: "#ddeaf1"</span></span>
+<span id="cb16-415"><a href="#cb16-415"></a><span class="in">```</span></span>
+<span id="cb16-416"><a href="#cb16-416"></a></span>
+<span id="cb16-417"><a href="#cb16-417"></a><span class="fu">#### Margin cotent</span></span>
+<span id="cb16-418"><a href="#cb16-418"></a>You can place content within the right margin of Quarto document. For example, here we use the <span class="in">`.column-margin`</span> class to place an image in the margin:</span>
+<span id="cb16-419"><a href="#cb16-419"></a></span>
+<span id="cb16-420"><a href="#cb16-420"></a>$$</span>
+<span id="cb16-421"><a href="#cb16-421"></a>e^{i\pi} = 1</span>
+<span id="cb16-422"><a href="#cb16-422"></a>$$</span>
+<span id="cb16-423"><a href="#cb16-423"></a></span>
+<span id="cb16-424"><a href="#cb16-424"></a>::: {.column-margin}</span>
+<span id="cb16-425"><a href="#cb16-425"></a>We know from *the first fundamental theorem of calculus* that for $x$ in $<span class="co">[</span><span class="ot">a, b</span><span class="co">]</span>$:</span>
+<span id="cb16-426"><a href="#cb16-426"></a>$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$</span>
+<span id="cb16-427"><a href="#cb16-427"></a>:::</span>
+<span id="cb16-428"><a href="#cb16-428"></a></span>
+<span id="cb16-429"><a href="#cb16-429"></a>Clearly, this can be done with images as well.</span>
+<span id="cb16-430"><a href="#cb16-430"></a></span>
+<span id="cb16-431"><a href="#cb16-431"></a><span class="fu">#### Margin figures</span></span>
+<span id="cb16-432"><a href="#cb16-432"></a>Figures that you create using code cells can be placed in the margin by using the column: margin code cell option. If the code produces more than one figure, each of the figures will be placed in the margin.</span>
+<span id="cb16-433"><a href="#cb16-433"></a></span>
+<span id="cb16-434"><a href="#cb16-434"></a><span class="in">```default</span></span>
+<span id="cb16-435"><a href="#cb16-435"></a><span class="in">#| label: fig-mtcars</span></span>
+<span id="cb16-436"><a href="#cb16-436"></a><span class="in">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
+<span id="cb16-437"><a href="#cb16-437"></a><span class="in">#| column: margin</span></span>
+<span id="cb16-438"><a href="#cb16-438"></a></span>
+<span id="cb16-439"><a href="#cb16-439"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb16-440"><a href="#cb16-440"></a><span class="in">mtcars2 &lt;- mtcars</span></span>
+<span id="cb16-441"><a href="#cb16-441"></a><span class="in">mtcars2$am &lt;- factor(</span></span>
+<span id="cb16-442"><a href="#cb16-442"></a><span class="in">  mtcars$am, labels = c('automatic', 'manual')</span></span>
+<span id="cb16-443"><a href="#cb16-443"></a><span class="in">)</span></span>
+<span id="cb16-444"><a href="#cb16-444"></a><span class="in">ggplot(mtcars2, aes(hp, mpg, color = am)) +</span></span>
+<span id="cb16-445"><a href="#cb16-445"></a><span class="in">  geom_point() +</span></span>
+<span id="cb16-446"><a href="#cb16-446"></a><span class="in">  geom_smooth(formula = y ~ x, method = "loess") +</span></span>
+<span id="cb16-447"><a href="#cb16-447"></a><span class="in">  theme(legend.position = 'bottom')```</span></span>
+<span id="cb16-448"><a href="#cb16-448"></a><span class="in">```</span></span>
+<span id="cb16-449"><a href="#cb16-449"></a></span>
+<span id="cb16-450"><a href="#cb16-450"></a><span class="fu">#### Margin refereces</span></span>
+<span id="cb16-451"><a href="#cb16-451"></a>Footnotes and the bibliography typically appear at the end of the document, but you can choose to have them placed in the margin by setting the following option1 in the document front matter:</span>
+<span id="cb16-452"><a href="#cb16-452"></a><span class="in">```default</span></span>
+<span id="cb16-453"><a href="#cb16-453"></a><span class="in">---</span></span>
+<span id="cb16-454"><a href="#cb16-454"></a><span class="in">reference-location: margin</span></span>
+<span id="cb16-455"><a href="#cb16-455"></a><span class="in">citation-location: margin</span></span>
+<span id="cb16-456"><a href="#cb16-456"></a><span class="in">---</span></span>
+<span id="cb16-457"><a href="#cb16-457"></a><span class="in">```</span></span>
+<span id="cb16-458"><a href="#cb16-458"></a>With these options set, footnotes and citations will (respectively) be automatically be placed in the margin of the document rather than the bottom of the page. As an example, when I cite Xie, Allaire, and Grolemund (<span class="co">[</span><span class="ot">2018</span><span class="co">](https://bookdown.org/yihui/rmarkdown/)</span>), the citation bibliography entry itself will now appear in the margin.</span>
+<span id="cb16-459"><a href="#cb16-459"></a></span>
+<span id="cb16-460"><a href="#cb16-460"></a><span class="fu">#### Asides</span></span>
+<span id="cb16-461"><a href="#cb16-461"></a>Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).</span>
+<span id="cb16-462"><a href="#cb16-462"></a><span class="co">[</span><span class="ot">This is a span that has the class `aside` which places it in the margin without a footnote number.</span><span class="co">]</span>{.aside}</span>
+<span id="cb16-463"><a href="#cb16-463"></a></span>
+<span id="cb16-464"><a href="#cb16-464"></a><span class="fu">#### Margin captions</span></span>
+<span id="cb16-465"><a href="#cb16-465"></a>For figures and tables, you may leave the content in the body of the document while placing the caption in the margin of the document. Using cap-location: margin in a code cell or document front matter to control this. For example:</span>
+<span id="cb16-466"><a href="#cb16-466"></a><span class="in">```default</span></span>
+<span id="cb16-467"><a href="#cb16-467"></a><span class="in">#| label: fig-cap-margin</span></span>
+<span id="cb16-468"><a href="#cb16-468"></a><span class="in">#| fig-cap: "MPG vs horsepower, colored by transmission."</span></span>
+<span id="cb16-469"><a href="#cb16-469"></a><span class="in">#| cap-location: margin</span></span>
+<span id="cb16-470"><a href="#cb16-470"></a></span>
+<span id="cb16-471"><a href="#cb16-471"></a><span class="in">library(ggplot2)</span></span>
+<span id="cb16-472"><a href="#cb16-472"></a><span class="in">mtcars2 &lt;- mtcars</span></span>
+<span id="cb16-473"><a href="#cb16-473"></a><span class="in">mtcars2$am &lt;- factor(</span></span>
+<span id="cb16-474"><a href="#cb16-474"></a><span class="in">  mtcars$am, labels = c('automatic', 'manual')</span></span>
+<span id="cb16-475"><a href="#cb16-475"></a><span class="in">)</span></span>
+<span id="cb16-476"><a href="#cb16-476"></a><span class="in">ggplot(mtcars2, aes(hp, mpg, color = am)) +</span></span>
+<span id="cb16-477"><a href="#cb16-477"></a><span class="in">  geom_point() +</span></span>
+<span id="cb16-478"><a href="#cb16-478"></a><span class="in">  geom_smooth(formula = y ~ x, method = "loess") +</span></span>
+<span id="cb16-479"><a href="#cb16-479"></a><span class="in">  theme(legend.position = 'bottom')</span></span>
+<span id="cb16-480"><a href="#cb16-480"></a><span class="in">```</span></span>
+<span id="cb16-481"><a href="#cb16-481"></a></span>
+<span id="cb16-482"><a href="#cb16-482"></a><span class="fu">#### Using classes</span></span>
+<span id="cb16-483"><a href="#cb16-483"></a>In addition to global and code cell specific options, you may use divs with layout classes (prefixed with <span class="in">`.column-`</span>) to arrange content into columns:</span>
+<span id="cb16-484"><a href="#cb16-484"></a></span>
+<span id="cb16-485"><a href="#cb16-485"></a>::: {.column-margin}</span>
+<span id="cb16-486"><a href="#cb16-486"></a>This content will appear in the margin!</span>
+<span id="cb16-487"><a href="#cb16-487"></a>:::</span>
+<span id="cb16-488"><a href="#cb16-488"></a></span>
+<span id="cb16-489"><a href="#cb16-489"></a><span class="fu">### Tabsets</span></span>
+<span id="cb16-490"><a href="#cb16-490"></a></span>
+<span id="cb16-491"><a href="#cb16-491"></a>::: {.panel-tabset}</span>
+<span id="cb16-492"><a href="#cb16-492"></a><span class="fu">## R</span></span>
+<span id="cb16-493"><a href="#cb16-493"></a></span>
+<span id="cb16-494"><a href="#cb16-494"></a><span class="in">``` {.r}</span></span>
+<span id="cb16-495"><a href="#cb16-495"></a>fizz_buzz <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">fbnums =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>) {</span>
+<span id="cb16-496"><a href="#cb16-496"></a>  output <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>(</span>
+<span id="cb16-497"><a href="#cb16-497"></a>    fbnums <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"FizzBuzz"</span>,</span>
+<span id="cb16-498"><a href="#cb16-498"></a>    fbnums <span class="sc">%%</span> <span class="dv">3</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Fizz"</span>,</span>
+<span id="cb16-499"><a href="#cb16-499"></a>    fbnums <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Buzz"</span>,</span>
+<span id="cb16-500"><a href="#cb16-500"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as.character</span>(fbnums)</span>
+<span id="cb16-501"><a href="#cb16-501"></a>  )</span>
+<span id="cb16-502"><a href="#cb16-502"></a>  <span class="fu">print</span>(output)</span>
+<span id="cb16-503"><a href="#cb16-503"></a>}</span>
+<span id="cb16-504"><a href="#cb16-504"></a><span class="in">```</span></span>
+<span id="cb16-505"><a href="#cb16-505"></a></span>
+<span id="cb16-506"><a href="#cb16-506"></a><span class="fu">## Python</span></span>
+<span id="cb16-507"><a href="#cb16-507"></a></span>
+<span id="cb16-508"><a href="#cb16-508"></a><span class="in">``` {.python}</span></span>
+<span id="cb16-509"><a href="#cb16-509"></a><span class="kw">def</span> fizz_buzz(num):</span>
+<span id="cb16-510"><a href="#cb16-510"></a>  <span class="cf">if</span> num <span class="op">%</span> <span class="dv">15</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb16-511"><a href="#cb16-511"></a>    <span class="bu">print</span>(<span class="st">"FizzBuzz"</span>)</span>
+<span id="cb16-512"><a href="#cb16-512"></a>  <span class="cf">elif</span> num <span class="op">%</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb16-513"><a href="#cb16-513"></a>    <span class="bu">print</span>(<span class="st">"Buzz"</span>)</span>
+<span id="cb16-514"><a href="#cb16-514"></a>  <span class="cf">elif</span> num <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb16-515"><a href="#cb16-515"></a>    <span class="bu">print</span>(<span class="st">"Fizz"</span>)</span>
+<span id="cb16-516"><a href="#cb16-516"></a>  <span class="cf">else</span>:</span>
+<span id="cb16-517"><a href="#cb16-517"></a>    <span class="bu">print</span>(num)</span>
+<span id="cb16-518"><a href="#cb16-518"></a><span class="in">```</span></span>
+<span id="cb16-519"><a href="#cb16-519"></a></span>
+<span id="cb16-520"><a href="#cb16-520"></a>:::</span>
+<span id="cb16-521"><a href="#cb16-521"></a></span>
+<span id="cb16-522"><a href="#cb16-522"></a><span class="fu">### Citations</span></span>
+<span id="cb16-523"><a href="#cb16-523"></a>Quarto will use Pandoc to automatically generate citations and a bibliography in a number of styles. To use this capability, you will need:</span>
+<span id="cb16-524"><a href="#cb16-524"></a></span>
+<span id="cb16-525"><a href="#cb16-525"></a><span class="ss">1. </span>A quarto document formatted with citations (see <span class="co">[</span><span class="ot">Citation Markdown</span><span class="co">](https://quarto.org/docs/authoring/citations.html#sec-citations)</span>).</span>
+<span id="cb16-526"><a href="#cb16-526"></a><span class="ss">2. </span>A bibliographic data source, for example a BibLaTeX (<span class="in">`.bib`</span>) or BibTeX (<span class="in">`.bibtex`</span>) file.</span>
+<span id="cb16-527"><a href="#cb16-527"></a><span class="ss">3. </span>Optionally, a <span class="in">`CSL`</span> file which specifies the formatting to use when generating the citations and bibliography (when not using <span class="in">`natbib`</span> or <span class="in">`biblatex`</span> to generate the bibliography).</span>
+<span id="cb16-528"><a href="#cb16-528"></a></span>
+<span id="cb16-529"><a href="#cb16-529"></a>In the front, just add <span class="in">`bibliography: references.bib`</span>.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

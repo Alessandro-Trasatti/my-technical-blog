@@ -1,0 +1,6 @@
+.thumbnail-image {
+    max-width: 130px; /* controls how big it can ever be */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centers it */
+  }
