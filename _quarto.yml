@@ -21,8 +21,11 @@ format:
       dark: darkly
     respect-user-color-scheme: true
     code-annotations: hover
-    css: styles.css
+    css: 
+      - styles.css
+      - computer-modern-fonts.css
     toc: true
+    toc-location: left
     code-tools: false
 
 execute:
